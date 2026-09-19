@@ -1,38 +1,47 @@
-# Rare Friends Vibeathon
+# Friend Arena
 
-**September 20–30, 2026 · $40,000 advertised prize pool**
+- **Project name:** Friend Arena
+- **Builder / contact:** [@JojoCE1177](https://x.com/JojoCE1177) · [Vladdtest/friends-arena](https://github.com/Vladdtest/friends-arena)
+- **Category:** Token Activity
+- **SDK:** FriendSDK v0.1
 
-1 prompt. 1 Rare Friend. Build a small, playable experience with [FriendSDK](https://github.com/spokesz/friendsdk): a minigame, virtual pet, idle game, gacha, or something new. AI-assisted builds are welcome. One working core loop is enough.
+## What did you build?
 
-## What to build
+A 1v1 garden arena where your Rare Friend buys a ticket, fights a same-generation rival over several hits, and every ticket is a simulated $RAREFRIENDS spend that the UI splits into burn + active-weight rewards.
 
-- **Use FriendSDK v0.1.** Make your selected Rare Friend part of the experience and preserve its original character artwork.
-- **Use the SDK's wallet and Friend selection.** Builders and players need a wallet holding a hardwired Generations NFT, generation 1 or higher, on Robinhood mainnet—even for previews.
-- **Keep everything inside the SDK's 960 × 640 game container.** Support keyboard and touch, with usable loading, error, mute and reduced-motion controls.
-- **Keep purchases and rewards simulated for your MVP, and label them clearly.** Live contracts and real-money transactions are not required to submit. Describe any features that need future SDK support.
+## How does it use Rare Friends?
 
-Choose your own world, artwork and style. Start with the SDK's starter example and make the main interaction work from beginning to end.
+You play as your own hardwired Generations NFT. The SDK verifies the wallet and Friend. The original walking sprite is the fighter; the rival is the same canonical art, mirrored, matched by generation and nearby tier/weight.
 
-## How to submit
+## Source
 
-Open a pull request in this repository adding `submissions/your-project/README.md` by **September 30, 2026**. Exact cutoff time and timezone: **TBA**.
+https://github.com/Vladdtest/friends-arena · FriendSDK v0.1
 
-Use the [Fishing example submission](https://github.com/spokesz/rarefriends-vibeathon/pull/1) as a guide. Include these details in your submission README and PR description:
+## Playable demo / how to run
 
-- **Project name, builder name/contact and category.**
-- **One sentence** explaining the experience and how it uses Rare Friends.
-- **Source repository** with game code, assets, SDK version and clear run instructions. Include a playable preview link if available.
-- **Controls and game rules.** If applicable, list RF costs, outcome probabilities, rewards and consumable rules. Credit any third-party assets.
-- **Checks and known issues.** Run the SDK's tests, typecheck, game validation and browser checks; report failures or limitations.
+No hosted demo. Node.js 22+:
 
-Submit early and improve your entry during the event. Production publication requires a separate Rare Friends review.
+```sh
+git clone https://github.com/spokesz/friendsdk.git
+cd friendsdk
+git clone https://github.com/Vladdtest/friends-arena.git games/friend-arena
+npm ci
+npm run dev:game -- games/friend-arena
 
-## Categories and prizes
 
-| Category | What it recognises | 1st | 2nd | 3rd |
-|---|---|---|---|---|
-| Character Spotlight | Best use of a Generations NFT as the main character | $1,000 + 1 Genesis NFT | $500 + 10 Gen-1 NFTs | $250 + 9 Gen-1 NFTs |
-| Token Activity | Most successful at burning or spending $RAREFRIENDS | $1,000 + 1 Genesis NFT | $500 + 10 Gen-1 NFTs | $250 + 9 Gen-1 NFTs |
-| Economy Potential | Best potential for a token economy paired with $RAREFRIENDS | $1,000 + 1 Genesis NFT | $500 + 10 Gen-1 NFTs | $250 + 9 Gen-1 NFTs |
+Requires a browser wallet on Robinhood mainnet (4663) holding a hardwired Generations NFT, generation 1 or higher. Purchases stay simulated.
+How do you play?
+WASD / arrows / tap to walk. Buy a ticket at the booth. Start a fight at the pit. Watch the 1v1, then redeem a prize from the locker. Settings include mute and reduced motion.
+Costs and rewards
+Everything is simulated and labelled.
 
-**Details pending:** seven additional paid spots are advertised alongside the $40,000 total pool. Remaining payouts, NFT valuations and how simulated entries are judged for Token Activity are TBA.
+Ticket: 1 RF
+Sweep 10% / 2.0 RF, Victory 25% / 1.8 RF, Narrow Win 15% / 1.6 RF, Defeat 50% / 0 RF
+Expected prize: 0.89 RF
+Story pool: 2 RF (player + simulated rival) → 1 RF burn + 1 RF to active-weight rewards
+Paid randomness is the table above. Weight only chooses a same-gen rival and the hit script.
+
+Known limitations
+Preview ledgers reset on reload. No live burns. Production publication needs a separate Rare Friends review.
+Credits
+FriendSDK runtime, garden world, menus, chance-game ledger, sounds and canonical Generations sprites.
