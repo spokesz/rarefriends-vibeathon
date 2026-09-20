@@ -1,0 +1,32 @@
+{
+  "name": "Rare Friends: Deep Sea Treasures",
+  "consumable": "Premium Bait",
+  "price": "1000000000000000000",
+  "outcomes": [
+    {
+      "name": "Coral Pebble",
+      "chanceBps": 3500,
+      "reward": "200000000000000000"
+    },
+    {
+      "name": "Sunfish NFT",
+      "chanceBps": 2800,
+      "reward": "600000000000000000"
+    },
+    {
+      "name": "Rainbow Trout NFT",
+      "chanceBps": 1800,
+      "reward": "1500000000000000000"
+    },
+    {
+      "name": "Koi NFT",
+      "chanceBps": 1200,
+      "reward": "3000000000000000000"
+    },
+    {
+      "name": "Legendary Dragon Carp NFT",
+      "chanceBps": 700,
+      "reward": "10000000000000000000"
+    }
+  ]
+}
