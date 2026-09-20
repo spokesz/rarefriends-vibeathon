@@ -1,0 +1,37 @@
+[
+  {
+    "id": "coral_pebble",
+    "rarity": "common",
+    "asset": "coral_pebble.jpg",
+    "emoji": "\ud83e\udea8",
+    "rows": null
+  },
+  {
+    "id": "sunfish",
+    "rarity": "uncommon",
+    "asset": "sunfish.jpg",
+    "emoji": "\ud83d\udc20",
+    "rows": null
+  },
+  {
+    "id": "rainbow_trout",
+    "rarity": "rare",
+    "asset": "rainbow_trout.jpg",
+    "emoji": "\ud83c\udf08",
+    "rows": null
+  },
+  {
+    "id": "koi",
+    "rarity": "epic",
+    "asset": "koi.jpg",
+    "emoji": "\ud83d\udc1f",
+    "rows": null
+  },
+  {
+    "id": "dragon_carp",
+    "rarity": "legendary",
+    "asset": "dragon_carp.jpg",
+    "emoji": "\ud83d\udc09",
+    "rows": null
+  }
+]
