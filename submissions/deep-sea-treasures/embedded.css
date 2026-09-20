@@ -1,0 +1,4 @@
+html, body, #root { margin: 0; width: 100%; height: 100%; overflow: hidden; }
+body { font-family: system-ui, sans-serif; }
+/* The trusted host's footer sits above this iframe; leave it clear in menus. */
+body .fv1 .rf-frame-scrim { padding-bottom: 64px; }
