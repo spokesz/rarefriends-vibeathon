@@ -1,0 +1,9 @@
+{
+  "chainId": 4663,
+  "game": "0x671a5080103cd44628d6725f8187aa2d2610f8b3",
+  "rf": "0x0779369854d3EcdEA927206718FFD7730C67B71f",
+  "generations": "0x14C49e6118F46525dE9ab41a51cBAA3c6EBF181D",
+  "entropy": "0xd8a0680e7699526b57140ed4eafdcc7219dc0a0c",
+  "provider": "0x8741b8a825644D9Ef18Faf2DAB5e9b47B900F2b6",
+  "deploymentBlock": "67238313"
+}
