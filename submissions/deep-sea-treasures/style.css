@@ -1,0 +1,163 @@
+.fv1 { --paper: #eee; --ink: #111; --game-paper: var(--paper); --game-ink: var(--ink); --game-accent: #111; --game-accent-ink: #eee; --game-font: ui-monospace, SFMono-Regular, Consolas, monospace; position: relative; isolation: isolate; contain: layout paint; container: fishing / size; width: 100%; height: 100%; min-width: 0; min-height: 0; overflow: hidden; color: var(--ink); background: var(--paper); font: 12px/1.4 var(--game-font); }
+.fv1 *, .fv1 *::before, .fv1 *::after { box-sizing: border-box; }
+.fv1 h2, .fv1 h3, .fv1 p { margin: 0; }
+.fv1 button, .fv1 input { font: inherit; color: inherit; border-radius: 0; }
+.fv1 button { padding: 8px 12px; min-height: 36px; border: 1px solid var(--ink); background: var(--paper); cursor: pointer; }
+.fv1 button:hover:not(:disabled) { background: #ddd; }
+.fv1 button:disabled { opacity: .45; cursor: default; }
+.fv1 button:focus-visible, .fv1 input:focus-visible, .fv1 canvas:focus-visible { outline: 2px solid var(--ink); outline-offset: -3px; }
+.fv1 .rf-game-button-primary { background: var(--ink); color: var(--paper); }
+.fv1 .fv1-primary { background: var(--ink); color: var(--paper); }
+.fv1 .fv1-primary:hover:not(:disabled) { background: #333; }
+.fv1-empty { display: grid; place-items: center; padding: 20px; }
+.fv1-accessible { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.fv1-world-ui, .fv1-world { position: absolute; inset: 0; overflow: hidden; }
+.fv1-world canvas { width: 100%; height: 100%; object-fit: contain; display: block; touch-action: none; image-rendering: pixelated; }
+.fv1-world-status { position: absolute; bottom: 54px; left: 16px; max-width: 60%; font-size: 9px; pointer-events: none; }
+.fv1-world-status[data-ready="true"] { display: none; }
+.fv1 .rf-game-hud { position: absolute; inset: 0; pointer-events: none; }
+.fv1 .rf-game-hud-top { inset: 18px 68px auto 18px; }
+.fv1 .rf-game-hud button { pointer-events: auto; }
+.fv1 .rf-game-wallet { background: var(--paper); border: 1px solid var(--ink); box-shadow: 2px 2px 0 var(--ink); }
+.fv1 .rf-game-inventory-button { background: var(--paper); box-shadow: 2px 2px 0 var(--ink); }
+.fv1 .fv1-icon { display: grid; place-items: center; width: 44px; height: 44px; min-height: 0; padding: 10px; }
+.fv1-icon svg { display: block; width: 100%; height: 100%; }
+.fv1-settings { position: absolute; right: 18px; top: 18px; }
+.fv1-sound { position: absolute; bottom: 18px; right: 18px; }
+.fv1 .rf-game-hotspot { position: absolute; min-height: 44px; box-shadow: 3px 3px 0 var(--ink); transform: translate(-50%, -50%); }
+.fv1 .rf-game-hotspot[data-active="true"] { background: var(--ink); color: var(--paper); }
+.fv1-pond-prompt { left: 19%; top: 43%; }
+.fv1-shop-prompt { left: 61%; top: 58%; }
+.fv1-world-feedback { position: absolute; left: 16px; right: 84px; bottom: 68px; padding: 8px; background: var(--paper); border: 1px solid var(--ink); }
+.fv1 .rf-frame-scrim { padding: 34px 18px; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); font-family: var(--game-font); }
+.fv1 .rf-frame-menu { width: min(512px, 100%); height: min(568px, 100%); min-width: 0; max-width: 100%; max-height: 100%; border: 2px solid var(--ink); }
+.fv1 .rf-frame-menu-heading { height: 42px; min-height: 42px; padding: 0 0 0 16px; gap: 8px; }
+.fv1 .rf-frame-menu-heading h2 { font: 11px/1.3 var(--game-font); letter-spacing: .03em; }
+.fv1 .rf-frame-menu-heading button { height: 40px; width: 40px; min-height: 0; padding: 0; border: 0; border-left: 1px solid var(--ink); font-size: 22px; }
+.fv1 .rf-frame-menu-body { flex: 1; min-height: 0; padding: 0; overflow: hidden; }
+.fv1 .rf-frame-menu-body p { margin: 0; }
+.fv1 .rf-frame-menu:has(.rf-game-panel) > .rf-frame-menu-heading { display: none; }
+.fv1 .rf-game-panel { width: 100%; height: 100%; border: 0; box-shadow: none; }
+.fv1 .rf-game-panel-bar { height: 42px; font-size: 10px; }
+.fv1 .rf-game-header-actions, .fv1 .rf-game-header-actions > *, .fv1 .rf-game-close { height: 41px; max-height: 41px; }
+.fv1 .rf-game-header-actions .fv1-icon, .fv1 .rf-game-header-actions .rf-game-close { width: 40px; border: 0; border-left: 1px solid var(--ink); padding: 8px; }
+.fv1 .rf-game-header-actions .rf-game-close { padding: 0; font-size: 22px; }
+.fv1 .rf-game-panel-body { padding: 16px 24px; }
+.fv1 .rf-game-action-zone { padding-inline: 22px; }
+.fv1 .rf-game-item-art { color: inherit; }
+.fv1 .rf-game-choice-art { max-width: 86px; }
+.fv1 .rf-game-item-picker[data-count="1"] .rf-game-item-choice { width: min(200px, 100%); }
+.fv1-bobber { width: 58px; height: 76px; }
+.fv1 .rf-game-activity-art { max-height: 82px; }
+.fv1 .rf-game-working-art { max-height: 130px; }
+.fv1-shop-panel { display: grid; height: 100%; grid-template-rows: 42px minmax(0, 1fr) 30px 52px 32px; gap: 10px; padding: 16px 22px 8px; }
+.fv1-tabs { display: flex; gap: 8px; min-height: 0; }
+.fv1-tabs button { flex: 1; min-height: 0; padding: 6px; }
+.fv1-tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+.fv1-shop-stock { min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.fv1-bait-card { display: grid; grid-template-rows: minmax(0, 1fr) 26px 22px 20px; padding: 16px; gap: 4px; justify-items: center; background: var(--ink); color: var(--paper); border: 1px solid var(--ink); }
+.fv1-bait-card > svg { min-height: 0; width: 100%; height: 100%; max-width: 90px; }
+.fv1-bait-card strong { align-self: end; font: 600 17px/1.3 system-ui, sans-serif; }
+.fv1-bait-card small { font-size: 10px; opacity: .7; }
+.fv1-shop-copy { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 18px; min-width: 0; }
+.fv1-shop-copy h3 { font: 600 24px/1.1 system-ui, sans-serif; letter-spacing: -.04em; }
+.fv1-shop-copy p { color: #666; font-size: 11px; }
+.fv1-quantity { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 11px; }
+.fv1-quantity input { width: 66px; min-width: 0; padding: 7px; border: 1px solid var(--ink); background: transparent; }
+.fv1 .fv1-link { min-height: 0; padding: 0; border: 0; text-decoration: underline; font-size: 10px; }
+.fv1-summary { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding-top: 4px; border-top: 1px solid var(--ink); font-size: 11px; }
+.fv1-summary strong { font-size: 15px; }
+.fv1-actions { display: flex; gap: 8px; min-height: 0; }
+.fv1-actions > button { flex: 1; min-width: 0; min-height: 0; display: flex; align-items: center; justify-content: space-between; gap: 4px; padding: 10px; font-size: 11px; }
+.fv1-actions > button > span { font-size: 16px; }
+.fv1-feedback { min-width: 0; min-height: 0; font-size: 10px; line-height: 1.35; overflow-wrap: anywhere; align-self: center; }
+.fv1-shop-panel[data-tab="sell"] { grid-template-rows: 36px minmax(0, 1fr); }
+.fv1-collection-panel { height: 100%; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) 52px 30px; gap: 8px; padding: 8px 16px; }
+.fv1-shop-panel > .fv1-collection-panel { padding: 0; gap: 6px; grid-template-rows: minmax(0, 1fr) 48px 28px; }
+.fv1-collection-scroll { display: grid; grid-template-rows: 24px minmax(170px, 1fr) 64px; gap: 8px; min-height: 0; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; scrollbar-width: thin; }
+.fv1-scroll-hint { display: none; }
+.fv1-collection-best { display: flex; justify-content: space-between; align-items: center; gap: 8px; font-size: 10px; }
+.fv1-collection { min-height: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.fv1 .fv1-collection > button { position: relative; min-height: 0; min-width: 0; display: grid; grid-template-rows: minmax(0, 1fr) 20px; gap: 4px; justify-items: center; padding: 16px 6px 4px; }
+.fv1-collection > button > svg { height: 100%; width: 100%; max-width: 100px; min-height: 0; }
+.fv1-collection > button[data-owned="false"] > svg { opacity: .25; }
+.fv1 .fv1-collection > button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.fv1-collection > button > span { font-size: 9px; line-height: 1.1; align-self: center; }
+.fv1-collection > button > small { position: absolute; top: 4px; right: 4px; background: var(--paper); color: var(--ink); font-size: 9px; padding: 0 2px; }
+.fv1-catch-detail { display: flex; flex-direction: column; justify-content: center; gap: 8px; border-top: 1px solid var(--ink); font-size: 10px; }
+.fv1-catch-detail > div { display: flex; justify-content: space-between; gap: 8px; }
+.fv1-catch-detail strong { font-size: 15px; }
+.fv1-text-panel { display: flex; flex-direction: column; gap: 18px; padding: 22px; overflow: auto; max-height: 100%; overscroll-behavior: contain; }
+.fv1-motion { display: flex; gap: 10px; align-items: center; }
+.fv1 table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.fv1 th, .fv1 td { text-align: left; padding: 8px 4px; border-bottom: 1px solid #1113; }
+.fv1 td:last-child { white-space: nowrap; }
+@container fishing (max-height: 420px) {
+  .fv1 .rf-frame-scrim { padding: 8px; }
+  .fv1 .rf-frame-menu { width: min(420px, 100%); }
+  .fv1 .rf-frame-menu-heading { height: 28px; min-height: 28px; padding-left: 10px; }
+  .fv1 .rf-frame-menu-heading button { height: 26px; width: 30px; }
+  .fv1 .rf-frame-menu-heading h2 { font-size: 9px; }
+  .fv1-shop-panel { padding: 8px 12px; gap: 6px; grid-template-rows: 28px minmax(0, 1fr) 22px 40px 26px; }
+  .fv1-shop-copy { gap: 8px; }
+  .fv1-shop-copy h3 { font-size: 18px; }
+  .fv1-shop-copy p { font-size: 9px; }
+  .fv1-bait-card { grid-template-rows: minmax(0, 1fr) 20px 15px; padding: 6px; gap: 2px; }
+  .fv1-bait-card strong { font-size: 13px; }
+  .fv1-bait-card small { display: none; }
+  .fv1-bait-card > span { font-size: 9px; }
+  .fv1-quantity { font-size: 9px; gap: 5px; }
+  .fv1-quantity input { padding: 3px; width: 44px; }
+  .fv1-actions > button { padding: 6px; font-size: 9px; }
+  .fv1-feedback { font-size: 8px; }
+  .fv1 .rf-game-hud-top { inset: 10px 56px auto 10px; }
+  .fv1 .fv1-icon { height: 36px; width: 36px; padding: 8px; }
+  .fv1-settings { top: 10px; right: 10px; }
+  .fv1-sound { bottom: 10px; right: 10px; }
+  .fv1 .rf-game-hotspot { min-height: 34px; padding: 5px; font-size: 9px; gap: 5px; }
+  .fv1 .rf-game-hotspot small { font-size: 7px; }
+  .fv1 .rf-game-keycap { width: 22px; height: 22px; }
+  .fv1-pond-prompt { left: 23%; }
+  .fv1-shop-prompt { left: 65%; top: 63%; }
+  .fv1-world-status { bottom: 46px; font-size: 7px; }
+  .fv1-collection-panel { grid-template-rows: minmax(0, 1fr) 36px 22px; gap: 4px; padding: 4px 10px; }
+  .fv1-collection-scroll { grid-template-rows: 16px minmax(144px, 1fr) 42px; gap: 4px; }
+  .fv1-collection-best { font-size: 8px; }
+  .fv1-scroll-hint { display: inline; color: #666; font-size: 7px; }
+  .fv1-collection { gap: 4px; }
+  .fv1 .fv1-collection > button { grid-template-rows: minmax(0, 1fr) 14px; padding: 10px 3px 2px; gap: 1px; }
+  .fv1-collection > button > span, .fv1-collection > button > small { font-size: 7px; }
+  .fv1-catch-detail { gap: 4px; font-size: 8px; }
+  .fv1-catch-detail strong { font-size: 11px; }
+  .fv1-shop-panel[data-tab="sell"] { grid-template-rows: 26px minmax(0, 1fr); }
+  .fv1-shop-panel > .fv1-collection-panel { grid-template-rows: minmax(0, 1fr) 34px 20px; gap: 3px; }
+  .fv1 .rf-game-panel-bar { height: 28px; font-size: 9px; }
+  .fv1 .rf-game-header-actions, .fv1 .rf-game-header-actions > *, .fv1 .rf-game-close { height: 27px; max-height: 27px; }
+  .fv1 .rf-game-header-actions .fv1-icon, .fv1 .rf-game-header-actions .rf-game-close { width: 30px; padding: 5px; }
+  .fv1 .rf-game-panel-body { padding: 8px 12px; }
+  .fv1 .rf-game-action-zone { padding-inline: 12px; }
+  .fv1-text-panel { padding: 12px; gap: 12px; font-size: 10px; }
+  .fv1 table { font-size: 10px; }
+}
+@container fishing (max-height: 270px) {
+  .fv1-shop-panel { grid-template-rows: 23px minmax(0, 1fr) 18px 34px 22px; gap: 4px; padding: 4px 8px; }
+  .fv1-shop-copy h3, .fv1-shop-copy > p { display: none; }
+  .fv1-shop-copy { gap: 6px; }
+  .fv1-bait-card { grid-template-columns: 36px 1fr; grid-template-rows: 1fr 1fr; align-items: center; padding: 4px; }
+  .fv1-bait-card > svg { grid-row: 1 / 3; }
+  .fv1-bait-card strong { font-size: 12px; }
+  .fv1-collection-panel { grid-template-rows: minmax(0, 1fr) 32px 20px; gap: 3px; padding: 3px 8px; }
+  .fv1 .fv1-collection > button { grid-template-rows: minmax(0, 1fr) 12px; padding: 5px 2px 1px; }
+  .fv1-collection > button > small { top: 1px; right: 1px; }
+  .fv1-catch-detail { gap: 2px; }
+  .fv1 .rf-game-activity-intro { display: none; }
+  .fv1 .rf-game-action-zone { height: 74px; grid-template-rows: 16px 36px 20px; }
+  .fv1 .rf-game-actions { height: 36px; }
+  .fv1 .rf-game-button { min-height: 36px; max-height: 36px; }
+  .fv1 .rf-game-feedback { height: 20px; }
+  .fv1 .rf-game-feedback > span { white-space: normal; max-height: 20px; font-size: 7px; line-height: 1.2; }
+  .fv1 .rf-game-working-art { max-height: 28px; }
+  .fv1 .rf-game-panel-foot { font-size: 7px; }
+}
+/* In the standalone fixture the host toolbar shares the DOM with the menu. */
+.rf-game-frame:has(.fv1[data-screen]:not([data-screen="world"])) .rf-frame-toolbar { visibility: hidden; }
