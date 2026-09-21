@@ -3,7 +3,7 @@
 > An interactive 2D winter wonderland minigame built for the **Rare Friends Vibeathon**.
 
 ## 🎮 Live Playable Demo
-👉 [Play in Browser](https://ais-dev-e5pnc336w3pyw7ibijcwy4-585630033660.europe-west2.run.app)
+👉 [Play in Browser] https://ai.studio/apps/4ed06645-d51c-4b6b-af2f-ae6ac644823f
 
 📦 **Project Source Code:** [https://github.com/gorno90/Playn-snow-](https://github.com/gorno90/Playn-snow-)
 
