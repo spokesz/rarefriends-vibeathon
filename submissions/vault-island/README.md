@@ -35,6 +35,12 @@ Stardust (no RF value): Crystal Echo 10 per round, Star Rain 4 per star, lock pi
 
 Controls: click or tap the ground or a station label to walk there (A* pathfinding), WASD/arrows, E to use a station. Full controls in the game README.
 
+Audio: an original chiptune engine synthesised in code (no files, no downloads). A looping 8-bit track per context (island, Star Rain, Crystal Echo, Vault Lock) plus effects on footsteps, station arrival, placement, refusal, purchases and reveals. Off by default, with one toggle for music and effects.
+
+Naming: players can give their Friend a local 16-character nickname, shown above it on the island and stored in the save code. The NFT and its artwork are never modified.
+
+Wallet panel: the HUD balance opens a ledger view (RF balance, keys, loot value, backing stake, free backing, reserved liability) for the selected Friend.
+
 ## Run locally
 
 ```sh
@@ -65,4 +71,6 @@ All 3D models built in code from primitives. Original 8×8 loot icons. Friend sp
 - RF ledger resets on reload: SDK v0.1 has no persistence. The island survives via save codes because the sandbox blocks browser storage. A wallet-bound save API would remove the codes.
 - Save codes trust the device clock; editing them can only affect cosmetic Stardust.
 - The route-blocking placement rule is a safety net and was not triggered in tests (paths and station surroundings are already off-limits).
+- **No ETH balance and no swap.** SDK v0.1.2 documents no wallet-balance, trading or swap API, no additional currency and no persistence, and the game sandbox cannot reach the chain. An ETH to RF swap at the Key merchant, and a live ETH balance in the wallet panel, both need future SDK support. The panel labels this limit in-game rather than faking a rate.
+- Music and effects were verified by driving the engine with a stubbed AudioContext (75 notes scheduled over 8 s on the island track, faster tempo on Star Rain, mute respected). Headless Chromium has no audio device, so the actual sound output has not been heard in automated tests.
 - Headless tests ran on software WebGL (3 to 7 fps). Real GPU performance not yet measured.
