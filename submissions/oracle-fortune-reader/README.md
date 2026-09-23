@@ -2,7 +2,7 @@
 
 Walk your Rare Friend to a violet oracle shrine, buy a fortune card, and keep or redeem the reading it deals you.
 
-**Builder:** [FOGcometh](https://github.com/FOGcometh) · **Category:** Character Spotlight · **SDK:** FriendSDK v0.1.2
+**Builder:** [lucymoran.eth](https://github.com/FOGcometh) (GitHub: [FOGcometh](https://github.com/FOGcometh)) · **Category:** Character Spotlight · **SDK:** FriendSDK v0.1.2
 
 **Play it:** https://fogcometh.github.io/oracle-fortune-reader/ — needs a browser wallet holding a hardwired Rare Friends Generations NFT (generation ≥ 1) on Robinhood mainnet (4663). [Source code](https://github.com/FOGcometh/oracle-fortune-reader) · [Game rules](https://github.com/FOGcometh/oracle-fortune-reader/blob/main/games/oracle-fortune-reader/game.json) · [The deck](https://github.com/FOGcometh/oracle-fortune-reader/blob/main/games/oracle-fortune-reader/deck.ts)
 
