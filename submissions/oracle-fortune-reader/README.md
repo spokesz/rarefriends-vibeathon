@@ -40,7 +40,7 @@ Everything stays inside the SDK frame: the 960 × 640 reference frame on desktop
 
 Expected reward: **0.9025 RF per reading** (a 9.75% edge, matching the SDK's own fishing example). Each purchased card reserves the maximum 10 RF prize; kept readings retain their RF backing with no redemption expiry, and new purchases stop when backing is insufficient. Preview progress resets when the runtime session ends.
 
-The displayed tier, chance and value always come from the settled client result — never from browser randomness. The reading's text is drawn from a deck of **22 hand-authored fortunes** in a plain data file (`deck.ts`), selected deterministically from the settled outcome and the Friend's own traits, so extending the deck is a copy-and-paste edit. Nobody re-rolls a reading to match a tier.
+The displayed tier, chance and value always come from the settled client result — never from browser randomness. The reading's text is drawn from a deck of **72 hand-authored fortunes** (15 Whisper, 14 Glimmer, 15 Echo, 14 Prophecy, 14 Oracle's Eye) in a plain data file (`deck.ts`), selected deterministically from the settled outcome and the Friend's own traits, so extending the deck is a copy-and-paste edit. Nobody re-rolls a reading to match a tier, and no two are alike until the deck has been walked several times over.
 
 ## Checks, credits and limitations
 
@@ -58,6 +58,6 @@ Run against FriendSDK v0.1.2 (checkout `762d6f5`):
 - There is no persistence: the sandbox has no `localStorage` and the bridge exposes no save API, so progress resets when the runtime session ends. Readings are not minted or stored anywhere.
 - The runtime's own menus (Friend wallet, transaction confirmations) are left in the SDK's own styling on purpose — that UI has to stay unmistakable. Only the game's layer and the page behind the frame are themed.
 
-**Credits:** original Rare Friends scenery, canonical character sprites and the SDK sound kit are used as provided by FriendSDK. The world renders in the SDK's monochrome mode; the shrine's violet palette, the 22 fortunes, and all game code are original to this submission. No third-party assets.
+**Credits:** original Rare Friends scenery, canonical character sprites and the SDK sound kit are used as provided by FriendSDK. The world renders in the SDK's monochrome mode; the shrine's violet palette, the 72 fortunes, and all game code are original to this submission. No third-party assets.
 
 No trading, wearable NFTs, creator fees or live economy is included, and Token Activity metrics are not claimed. Production publication needs separate Rare Friends review.
