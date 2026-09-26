@@ -1,0 +1,12 @@
+{
+  "name": "FriendForge Gacha",
+  "consumable": "Capsule",
+  "price": "1000000000000000000",
+  "outcomes": [
+    { "name": "Common Friend", "chanceBps": 5500, "reward": "100000000000000000" },
+    { "name": "Uncommon Friend", "chanceBps": 2800, "reward": "500000000000000000" },
+    { "name": "Rare Friend", "chanceBps": 1200, "reward": "1000000000000000000" },
+    { "name": "Epic Friend", "chanceBps": 450, "reward": "2000000000000000000" },
+    { "name": "Mythic Friend", "chanceBps": 50, "reward": "5000000000000000000" }
+  ]
+}

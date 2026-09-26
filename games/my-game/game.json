@@ -1,0 +1,10 @@
+{
+  "name": "Garden Packs",
+  "consumable": "Pack",
+  "price": "1000000000000000000",
+  "outcomes": [
+    { "name": "Garden pebble", "chanceBps": 6000, "reward": "500000000000000000" },
+    { "name": "Pressed flower", "chanceBps": 3000, "reward": "1000000000000000000" },
+    { "name": "Crystal", "chanceBps": 1000, "reward": "3000000000000000000" }
+  ]
+}
