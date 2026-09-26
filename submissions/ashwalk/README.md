@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/bd59b900278752a582b646b4d1e5f3d820d0ee9f) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/d5974a55ddf00bc2872fa2539e473bfa9dc3a494) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -45,7 +45,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 ## How do you play?
 
-A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, or buys a lantern. On a phone, use the buttons at the bottom. Mute and reduced motion are in the corner.
+A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
 The shore is free. Beating a fog opens the next one, and continuing costs 5 Rare coins. Six fogs: the shore, the latch, the gale, the choir, the sign, and the antler. The antler wakes something buried. Lead it into the cage and stand on the plate. Its arms keep moving. In the MetaMask browser the frame fills the screen.
 
