@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/43773b8d70ae8eab750b7c6797ddeaf87c3a6d21) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/385cbd10678d3e949f859aa57d69e3508c16f2a0) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, turns a lock, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
-This preview opens only the shore. The other fogs are locked. The moon stays shut until October 1 and is marked coming soon.
+This preview opens only the shore. The other fogs are locked. The moon stays shut until October 1. The mirror stays shut until November 1. Both are marked coming soon.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
@@ -67,7 +67,7 @@ Everything is simulated.
 
 ## Known limitations
 
-Rare-coin spends and clothes are stored in localStorage for the connected address. They are not on-chain transfers, and they do not follow the wallet to another browser. Coins you carry on a walk are not added to the wallet balance. Clearing a fog is also stored on this device. This preview opens only the shore. The moon stays locked until October 1. Multiplayer needs `npm run dev` for the signaling route. The public Pages build is solo play.
+Rare-coin spends and clothes are stored in localStorage for the connected address. They are not on-chain transfers, and they do not follow the wallet to another browser. Coins you carry on a walk are not added to the wallet balance. Clearing a fog is also stored on this device. This preview opens only the shore. The moon stays locked until October 1. The mirror stays locked until November 1. Multiplayer needs `npm run dev` for the signaling route. The public Pages build is solo play.
 
 ## Credits
 
