@@ -47,7 +47,9 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, turns a lock, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
-The shore is free. Beat it and the game asks for 10 Rare coins to continue. After that payment, each fog opens when you beat the one before it. The moon stays shut until October 1. The mirror stays shut until November 1. Both are marked coming soon. The mirror, once it opens, is a jungle water crossing: alligators in the water, and a larger copy of your Friend that wakes after you reach him. You then run back to the door. The sign drops into a drain full of trash and rats. The shore ends on three bells and a plate.
+The shore is free. Beat it and the game asks for 10 Rare coins to continue. After that payment, each fog opens when you beat the one before it. The moon stays shut until October 1. The mirror stays shut until November 1. Both are marked coming soon.
+
+On the shore, the first crossing and the wind planks fall, spiders drop over the gap and the pit, and a second bird crosses the gust. After the wind, stand on a plate and run before the gate drops. The door stays shut until the lock reads 2, 6, 4, then the three bells and the last plate. The mirror, once it opens, is a jungle water crossing: alligators in the water, and a larger copy of your Friend that wakes after you reach him. You then run back to the door. The sign drops into a drain full of trash and rats.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
