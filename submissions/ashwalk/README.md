@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/e1e073eb4275b36e6c14d84db07a98c5586f3caf) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/d51a4abdac293fbaa8e90c6301adf5ac8f9770af) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, turns a lock, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
-This preview has the boards open so they can be walked. The moon stays shut until October 1 and is marked coming soon. The other fogs are the shore, the latch, the gale, the choir, the works, the sign, and the antler. The latch ends on a lock. The gates are tall. The antler wakes something buried. Lead it into the cage and stand on the plate. Its arms keep moving. The way out of the moon, once it opens, is up.
+This preview opens only the shore. The other fogs are locked. The moon stays shut until October 1 and is marked coming soon. The rest of the woods are the latch, the gale, the choir, the works, the sign, and the antler. The latch ends on a lock. The gates are tall. The antler wakes something buried. Lead it into the cage and stand on the plate. Its arms keep moving. The way out of the moon, once it opens, is up.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
@@ -56,7 +56,7 @@ With friends, open a room code and have the other person join it. Bells, ropes, 
 Everything is simulated.
 
 - The shore is free. You start that walk with 5 coins.
-- Every fog after the shore costs 5 Rare coins. 20 Rare coins opens every fog, and those walks do not charge again. This preview leaves those boards open for the demo. The moon is not included.
+- Every fog after the shore costs 5 Rare coins. 20 Rare coins opens every fog, and those walks do not charge again. This preview locks every fog except the shore. The moon is not included.
 - A death burns half the coins you are carrying. Three lives, then you return to the menu. The shore is still free.
 - A lantern costs 1 collected coin and lasts 10 seconds on the dark boards. A flashlight costs 5 collected coins.
 - The red cape is locked. The white cape opens October 1 and then costs 10 Rare coins. Bought clothes stay on that wallet in this browser.
@@ -67,7 +67,7 @@ Everything is simulated.
 
 ## Known limitations
 
-Rare-coin spends and clothes are stored in localStorage for the connected address. They are not on-chain transfers, and they do not follow the wallet to another browser. Coins you carry on a walk are not added to the wallet balance. Clearing a fog is also stored on this device. This preview forces the boards open except the moon, which stays locked until October 1. Multiplayer needs `npm run dev` for the signaling route. The public Pages build is solo play.
+Rare-coin spends and clothes are stored in localStorage for the connected address. They are not on-chain transfers, and they do not follow the wallet to another browser. Coins you carry on a walk are not added to the wallet balance. Clearing a fog is also stored on this device. This preview opens only the shore. The moon stays locked until October 1. Multiplayer needs `npm run dev` for the signaling route. The public Pages build is solo play.
 
 ## Credits
 
