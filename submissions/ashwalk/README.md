@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/cdb7471f654beb7796a102c969ee76b5c6962c52) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/4c5642b6bdabe0e300e17dd86261141b5a409785) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, turns a lock, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
-Every fog is open to try, including the moon and the mirror. None of them charge to start.
+Every fog is open to try, including the moon, the mirror, and the new tunnel. None of them charge to start. The tunnel is a dark cave: falling planks, a swinging frame, a ladder over spikes, three bells, and a gate you have to run.
 
 On the shore, the first crossing and the wind planks fall, spiders drop over the gap and the pit, and a second bird crosses the gust. After the wind, stand on a plate and run before the gate drops. The door stays shut until the three bells are lit and you stand on the last plate. The mirror, once it opens, is a jungle water crossing: alligators in the water, and a larger copy of your Friend that wakes after you reach him. You then run back to the door. The sign drops into a drain full of trash and rats.
 
