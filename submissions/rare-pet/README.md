@@ -4,14 +4,14 @@
 
 - **Builder / contact:** XIBOT · [@xavieriturralde on X](https://x.com/xavieriturralde) · [GitHub](https://github.com/xibot).
 - **Category:** Character Spotlight; also relevant to Economy Potential.
-- **One sentence:** RarePet gives Genesis and Generations Rare Friends a Tamagotchi-inspired daily life: onchain care, a floating home, Rare Rush play, shareable moments, an NFT-owned wallet, token launches and in-app trading.
+- **One sentence:** RarePet gives Genesis and Generations Rare Friends a Tamagotchi-inspired daily life: onchain care, a floating home, arcade play, shareable moments, an NFT-owned wallet, token launches and in-app trading.
 - **Working demo:** [rarepet.app](https://rarepet.app) · [Visual care guide](https://rarepet.app/docs/).
 - **Public source:** [xibot/rare-pet](https://github.com/xibot/rare-pet), submitted revision [f647c82](https://github.com/xibot/rare-pet/tree/f647c82255e834a19b8aeecb06f1e5cc6642bb55).
-- **Stack:** React, TypeScript, SVG, Solidity and viem; FriendSDK **0.1.2** for wallet sessions, canonical identity/art/worlds and the embedded Rare Rush integration; Doppler SDK **1.0.43** for launches.
+- **Stack:** React, TypeScript, SVG, Solidity and viem; FriendSDK **0.1.2** for wallet sessions and canonical identity, artwork and worlds; Doppler SDK **1.0.43** for launches.
 
 **Current V1:** onchain Pet, Feed and Poop are deployed and connected on Robinhood Chain. Rare Wallet, the Doppler launchpad and Buy / Sell are available inside the app. Verified onchain Play XP and rarity-farming prize seasons remain later work. The wallet-free Preview is the simulated judging path; no purchase or transaction is needed to evaluate it.
 
-This is a custom React pet application with its own interface, separate from [Rare Rush, entry #22](https://github.com/spokesz/rarefriends-vibeathon/pull/22). It uses that game's engine for Play. Daily care, the habitat, exports, Rare Wallet, launchpad and trading are the focus of this entry.
+RarePet brings daily care, a personal habitat, arcade play, exports, Rare Wallet, launches and trading together around your selected Friend.
 
 ## Try it without a wallet
 
@@ -19,12 +19,12 @@ This is a custom React pet application with its own interface, separate from [Ra
 2. Use **Choose Friend → Preview Friends** to try a Genesis or Generations sample.
 3. **Pet**, **Feed** and **Poop** to see different reactions, speech bubbles, trait changes and independent countdowns. Preview progress stays on this device, separately for each sample.
 4. Pick one of **11 islands** across Worlds and Classic. Matching background islands drift through space with visiting Friends. Genesis samples also have **36 cosmetic bodies**, preserving the original portrait.
-5. Open **Play** to run Rare Rush with the selected Friend. Complete a run for Preview XP; an unfinished run earns none. Courses include turning shafts, free falls, spinning Friends, flying coins, shields and magnets.
+5. Open **Play** to take the selected Friend into the in-app arcade. Complete a run for Preview XP; an unfinished run earns none. Courses include turning shafts, free falls, spinning Friends, flying coins, shields and magnets.
 6. Open **SHARE ↗**. Choose Pet, Feed or Poop, try another pose, and add a custom speech bubble of up to **21 characters**. Export a **2000 × 2000 PNG** or **800 × 800 animated GIF** with a 2.4-second loop, including the Friend and island. Download + Share on X prepares a draft; attach the file and publish only if you want to.
 7. Open **LAUNCH in Daily Care** to explore the launch form in Preview, and **BUY / SELL** to browse the token catalog. Preview launches create no token and award no Brain. Browsing needs no wallet; actual trades use real assets and are not part of the simulated demo.
 8. Read the [visual guide](https://rarepet.app/docs/) for the action cards, streak timeline, interactive island/body examples and live-versus-later feature map.
 
-Rare Rush supports keyboard and touch: Space/Up/W jumps and double-jumps, Down/S slides, Left/Right steers or adjusts pace, and P/Escape pauses. Sound controls and reduced-motion preferences are supported.
+The arcade supports keyboard and touch: Space/Up/W jumps and double-jumps, Down/S slides, Left/Right steers or adjusts pace, and P/Escape pauses. Sound controls and reduced-motion preferences are supported.
 
 ## Daily care and permanent history
 
@@ -41,11 +41,11 @@ Pet unlocks 24 hours after the last Pet, followed by a **24-hour grace window**.
 
 The care ledger preserves past records while allowing the care administrator to propose future rule changes through a public **24-hour delay**. Current rewards, limits and countdowns are shown in the dashboard. Stamina accumulates as a trait; it is not spent to enter Play. Preview progress is local, separate from owned care, and has no promised onchain conversion.
 
-**Still to come:** verified game-completion receipts and the client claim flow for onchain Play XP. Rarity-farming seasons are planned to reward greater earned Rarity; season eligibility and prize distribution are not active. Care has no consumable purchase, randomized payout or live prize claim. Rare Rush's displayed demo RF/$RUSH economy is simulated.
+**Still to come:** verified game-completion receipts and the client claim flow for onchain Play XP. Rarity-farming seasons are planned to reward greater earned Rarity; season eligibility and prize distribution are not active. Care has no consumable purchase, randomized payout or live prize claim. The arcade's displayed demo RF/$RUSH economy is simulated.
 
 ## Your Friend's wallet, launches and trading
 
-Use an injected browser wallet on **Robinhood Chain, chain ID 4663**. Owned care supports Genesis and Generations; **Rare Wallet and owned Rare Rush play require Genesis or hardwired Generations**. Ownership and original artwork are rechecked when selecting a Friend. Click the top-right wallet address to disconnect; Choose Friend is for selection and refresh. Mobile users need a compatible wallet browser; WalletConnect is not included.
+Use an injected browser wallet on **Robinhood Chain, chain ID 4663**. Owned care supports Genesis and Generations; **Rare Wallet and owned Play require Genesis or hardwired Generations**. Ownership and original artwork are rechecked when selecting a Friend. Click the top-right wallet address to disconnect; Choose Friend is for selection and refresh. Mobile users need a compatible wallet browser; WalletConnect is not included.
 
 ### Rare Wallet
 
@@ -115,6 +115,6 @@ See the [source README](https://github.com/xibot/rare-pet/blob/f647c82255e834a19
 
 ## Credits
 
-App, interface and Rare Rush integration: **XIBOT**. Rare Friends character artwork, canonical body frames and six complete Worlds presets come from Rare Friends/FriendSDK, preserving original artwork and notices. Classic floors and care effects are decorative interface artwork. Doppler supplies launch modules/SDK, and Uniswap supplies trading infrastructure. Silkscreen, Archivo and Sometype Mono retain their font licenses. See [third-party notices](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/THIRD_PARTY_NOTICES.md).
+App, interface and gameplay: **XIBOT**. Rare Friends character artwork, canonical body frames and six complete Worlds presets come from Rare Friends/FriendSDK, preserving original artwork and notices. Classic floors and care effects are decorative interface artwork. Doppler supplies launch modules/SDK, and Uniswap supplies trading infrastructure. Silkscreen, Archivo and Sometype Mono retain their font licenses. See [third-party notices](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/THIRD_PARTY_NOTICES.md).
 
 **Take care. Play. Stay rare.**
