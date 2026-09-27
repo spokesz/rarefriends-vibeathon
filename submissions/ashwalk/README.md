@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/971af4012e861e47d2166b83808fbcb4701366f3) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/d05feaad538e6af001f50f292ca7025255203b84) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, turns a lock, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
-This preview opens the shore and The mirror. The mirror is open so it can be tried: cross the water to the giant, light what he is, then turn back to the door. The other fogs are locked. The moon stays shut until October 1 and is marked coming soon. The rest of the woods are the latch, the gale, the choir, the works, the sign, and the antler. The latch ends on a lock. The gates are tall. The antler wakes something buried. Lead it into the cage and stand on the plate. Its arms keep moving. The way out of the moon, once it opens, is up.
+This preview opens the shore and The mirror. The mirror is open so it can be tried: cross the water until the giant wakes, then run back to the door while he hunts you. The other fogs are locked. The moon stays shut until October 1 and is marked coming soon. The rest of the woods are the latch, the gale, the choir, the works, the sign, and the antler. The latch ends on a lock. The gates are tall. The antler wakes something buried. Lead it into the cage and stand on the plate. Its arms keep moving. The way out of the moon, once it opens, is up.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
