@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/d99b6d7cc3c054d611c565b37fa03e732dfcd648) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/04dae81c85d35b28207427abb09e86047e25cbaa) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -49,7 +49,7 @@ A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage.
 
 The shore is free. Beat it and the game asks for 10 Rare coins to continue. After that payment, each fog opens when you beat the one before it. The moon stays shut until October 1. The mirror stays shut until November 1. Both are marked coming soon.
 
-On the shore, the first crossing and the wind planks fall, spiders drop over the gap and the pit, and a second bird crosses the gust. After the wind, stand on a plate and run before the gate drops. The door stays shut until the lock reads 2, 6, 4, then the three bells and the last plate. The mirror, once it opens, is a jungle water crossing: alligators in the water, and a larger copy of your Friend that wakes after you reach him. You then run back to the door. The sign drops into a drain full of trash and rats.
+On the shore, the first crossing and the wind planks fall, spiders drop over the gap and the pit, and a second bird crosses the gust. After the wind, stand on a plate and run before the gate drops. The door stays shut until the three bells are lit and you stand on the last plate. The mirror, once it opens, is a jungle water crossing: alligators in the water, and a larger copy of your Friend that wakes after you reach him. You then run back to the door. The sign drops into a drain full of trash and rats.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
