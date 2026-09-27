@@ -14,7 +14,7 @@ Character Spotlight
 
 ## What did you build?
 
-A side-scrolling fog platformer where your Rare Friend walks the woods, lights bells, and outruns the thing under the ground.
+A side-scrolling fog platformer where your Rare Friend walks the woods, lights bells, and outruns what wakes behind them.
 
 ## How does it use Rare Friends?
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, turns a lock, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
-This preview opens only the shore. The other fogs are locked. The moon stays shut until October 1. The mirror stays shut until November 1. Both are marked coming soon.
+This preview opens only the shore. The other fogs are locked. The moon stays shut until October 1. The mirror stays shut until November 1. Both are marked coming soon. The mirror, once it opens, is a jungle water crossing: alligators in the water, and a larger copy of your Friend that wakes after you reach him. You then run back to the door. The sign drops into a drain full of trash and rats. The shore ends on three bells and a plate.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
@@ -56,14 +56,14 @@ With friends, open a room code and have the other person join it. Bells, ropes, 
 Everything is simulated.
 
 - The shore is free. You start that walk with 5 coins.
-- Every fog after the shore costs 5 Rare coins. 20 Rare coins opens every fog, and those walks do not charge again. This preview locks every fog except the shore. The moon is not included.
+- Every fog after the shore costs 5 Rare coins. 20 Rare coins opens every fog, and those walks do not charge again. This preview locks every fog except the shore. The moon opens October 1. The mirror opens November 1. Neither is included in the 20-coin unlock.
 - A death burns half the coins you are carrying. Three lives, then you can buy one more for 10 Rare coins. Leave, and the shore is still free.
 - Half of every Rare coin you spend is burned. A lantern costs 1 coin you picked up and lasts 10 seconds. A flashlight costs 5 coins you picked up. Neither one spends Rare coins.
 - The red cape costs 10 Rare coins. The white cape opens October 1 and then costs 10 Rare coins. Bought clothes stay on that wallet in this browser.
 
 ## What have you tested?
 
-`npx tsc --noEmit` passes. Solo play was checked in the browser on desktop and a phone-sized layout: movement, jumps, bells, the latch lock, the cage, the wallet balance, and the October locks. A full automated browser suite against a fresh clone has not been re-run for this submission.
+`npx tsc --noEmit` passes. Solo play was checked in the browser on desktop and a phone-sized layout: movement, jumps, bells, the wallet balance, and the October and November locks. A full automated browser suite against a fresh clone has not been re-run for this submission.
 
 ## Known limitations
 
@@ -71,4 +71,4 @@ Rare-coin spends and clothes are stored in localStorage for the connected addres
 
 ## Credits
 
-Original silhouette art, levels, and music. The Friend sprite, halo, and wallet read come from FriendSDK v0.1.2. The fog, dead trees, and the antler creature are original drawings in the spirit of monochrome side-scrollers, not copied from a game.
+Original silhouette art, levels, and music. The Friend sprite, halo, and wallet read come from FriendSDK v0.1.2. The fog, dead trees, jungle, drain, and the antler creature are original drawings in the spirit of monochrome side-scrollers, not copied from a game.
