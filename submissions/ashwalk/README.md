@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/7b331fa3c9ef2767e86b33afaf69edf355d604c4) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/03958bb8dd758c3240ac2167aaedaf51e48f5491) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, turns a lock, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
-This preview opens every fog so they can be tried, including the moon. None of them charge to start. The works is a longer plank run with spiders, and the door is through a tunnel. Choir platforms carry a light. The shore, the gale, and the choir also make you walk a tunnel before the door.
+This preview opens every fog so they can be tried, including the moon. None of them charge to start. The works is a longer plank run with spiders. Choir platforms carry a light. The mirror water has alligators.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
