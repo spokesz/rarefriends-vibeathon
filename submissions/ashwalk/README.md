@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/983ff41aeb937bf27d1b3c322b03c7da1528fb47) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/e207da43612e8d194482d93f9407e918426f3364) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a cage. E pulls a rope, lights a bell, turns a lock, or buys a lantern. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the corner. Sound is on, and the music starts on the first tap.
 
-The shore is free. Beat it and the game asks for 10 Rare coins to continue. After that payment, each fog opens when you beat the one before it. The moon stays shut until October 1. The mirror stays shut until November 1. The tunnel stays shut until December 1. All three are marked coming soon. The tunnel, once it opens, is a dark cave: falling planks, a swinging frame, a ladder over spikes, three bells, and a gate you have to run.
+The shore is free. Beat it and the game asks for 10 Rare coins to continue. After that payment, each fog opens when you beat the one before it. The moon stays shut until October 1. The mirror stays shut until November 1. The tunnel is open to try: a dark cave with falling planks, a swinging frame, a ladder over spikes, three bells, and a gate you have to run. It returns to a December 1 lock when the try flag is off.
 
 On the shore, the first crossing and the wind planks fall, spiders drop over the gap and the pit, and a second bird crosses the gust. After the wind, stand on a plate and run before the gate drops. The door stays shut until the three bells are lit and you stand on the last plate. The mirror, once it opens, is a jungle water crossing: alligators in the water, and a larger copy of your Friend that wakes after you reach him. You then run back to the door. The sign drops into a drain full of trash and rats.
 
@@ -58,7 +58,7 @@ With friends, open a room code and have the other person join it. Bells, ropes, 
 Everything is simulated.
 
 - The shore is free. You start that walk with 5 coins.
-- After you beat the shore, continuing costs 10 Rare coins. Half of that spend is burned. After that, each fog opens when you beat the one before it. The moon opens October 1. The mirror opens November 1. The tunnel opens December 1. Those date locks are not skipped by the payment.
+- After you beat the shore, continuing costs 10 Rare coins. Half of that spend is burned. After that, each fog opens when you beat the one before it. The moon opens October 1. The mirror opens November 1. The tunnel is open to try and does not charge. Its December 1 lock is off for this preview.
 - A death burns half the coins you are carrying. Three lives, then you can buy one more for 10 Rare coins. Leave, and the shore is still free.
 - Half of every Rare coin you spend is burned. A lantern costs 1 coin you picked up and lasts 10 seconds. A flashlight costs 5 coins you picked up. Neither one spends Rare coins.
 - The red cape costs 10 Rare coins. The white cape opens October 1 and then costs 10 Rare coins. Bought clothes stay on that wallet in this browser.
@@ -69,7 +69,7 @@ Everything is simulated.
 
 ## Known limitations
 
-Rare-coin spends and clothes are stored in localStorage for the connected address. They are not on-chain transfers, and they do not follow the wallet to another browser. Coins you carry on a walk are not added to the wallet balance. This preview opens only the shore. The moon stays locked until October 1. The mirror stays locked until November 1. The tunnel stays locked until December 1. Multiplayer needs `npm run dev` for the signaling route. The public Pages build is solo play.
+Rare-coin spends and clothes are stored in localStorage for the connected address. They are not on-chain transfers, and they do not follow the wallet to another browser. Coins you carry on a walk are not added to the wallet balance. This preview opens the shore and the tunnel. The moon stays locked until October 1. The mirror stays locked until November 1. Multiplayer needs `npm run dev` for the signaling route. The public Pages build is solo play.
 
 ## Credits
 
