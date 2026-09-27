@@ -6,7 +6,7 @@
 - **Category:** Character Spotlight; also relevant to Economy Potential.
 - **One sentence:** RarePet gives Genesis and Generations Rare Friends a Tamagotchi-inspired daily life: onchain care, a floating home, arcade play, shareable moments, an NFT-owned wallet, token launches and in-app trading.
 - **Working demo:** [rarepet.app](https://rarepet.app) · [Visual care guide](https://rarepet.app/docs/).
-- **Public source:** [xibot/rare-pet](https://github.com/xibot/rare-pet), submitted revision [f647c82](https://github.com/xibot/rare-pet/tree/f647c82255e834a19b8aeecb06f1e5cc6642bb55).
+- **Public source:** [xibot/rare-pet](https://github.com/xibot/rare-pet), submitted revision [f019a08](https://github.com/xibot/rare-pet/tree/f019a0804e2df86fc84e2191451a47ce6436488a).
 - **Stack:** React, TypeScript, SVG, Solidity and viem; FriendSDK **0.1.2** for wallet sessions and canonical identity, artwork and worlds; Doppler SDK **1.0.43** for launches.
 
 **Current V1:** onchain Pet, Feed and Poop are deployed and connected on Robinhood Chain. Rare Wallet, the Doppler launchpad and Buy / Sell are available inside the app. Verified onchain Play XP and rarity-farming prize seasons remain later work. The wallet-free Preview is the simulated judging path; no purchase or transaction is needed to evaluate it.
@@ -85,7 +85,7 @@ Trades use existing Uniswap V3/V4 infrastructure and the launched tokens' Dopple
 | **Care ledger** | [0x0082229d9592292E2542cb29a6b94d9a2F22d124](https://robinhoodchain.blockscout.com/address/0x0082229d9592292E2542cb29a6b94d9a2F22d124?tab=contract) | Verified — exact match |
 | **Launch router** | [0xc6a4b2D4D369747B26e4Ff805a79A57da2505dC3](https://robinhoodchain.blockscout.com/address/0xc6a4b2D4D369747B26e4Ff805a79A57da2505dC3?tab=contract) | Verified — partial match |
 
-Source badges were checked on September 26, 2026. Exact deployed runtime and configuration checks are recorded separately in the [care manifest](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/contracts/rare-pet/deployments/4663.json) and [launch manifest](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/contracts/rare-launchpad/deployments/4663-0xc6a4b2d4d369747b26e4ff805a79a57da2505dc3.json). **Source verification is not a security audit; the custom RarePet contracts have not been independently audited.**
+Source badges were checked on September 26, 2026. Exact deployed runtime and configuration checks are recorded separately in the [care manifest](https://github.com/xibot/rare-pet/blob/f019a0804e2df86fc84e2191451a47ce6436488a/contracts/rare-pet/deployments/4663.json) and [launch manifest](https://github.com/xibot/rare-pet/blob/f019a0804e2df86fc84e2191451a47ce6436488a/contracts/rare-launchpad/deployments/4663-0xc6a4b2d4d369747b26e4ff805a79a57da2505dc3.json). **Source verification is not a security audit; the custom RarePet contracts have not been independently audited.**
 
 The original router, `0x8c46baA63079B8648b1cd5689058E0AAB33DF063`, remains for historical launch discovery and fee claims, not new launches. It does not have its own verified-source badge. Historical holder-reward experiments are not used by V1.
 
@@ -96,18 +96,18 @@ Use **Node.js 22.18 or later in the 22.x line** and npm:
 ```sh
 git clone https://github.com/xibot/rare-pet.git
 cd rare-pet
-git checkout f647c82255e834a19b8aeecb06f1e5cc6642bb55
+git checkout f019a0804e2df86fc84e2191451a47ce6436488a
 npm ci
 npm run dev
 ```
 
 Open **http://localhost:4175**. No secrets or environment variables are needed for the Preview demo. `npm run build` produces `dist-pet/`, including the main app and `/docs/`. Launch opens from its Daily Care action. Live contract addresses, image storage and server-side routing use the documented configuration; never put a private key in the frontend.
 
-See the [source README](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/README.md) and [developer guide](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/docs/DEVELOPMENT.md) for configuration, contract tests, browser suites and validation records.
+See the [source README](https://github.com/xibot/rare-pet/blob/f019a0804e2df86fc84e2191451a47ce6436488a/README.md) and [developer guide](https://github.com/xibot/rare-pet/blob/f019a0804e2df86fc84e2191451a47ce6436488a/docs/DEVELOPMENT.md) for configuration, contract tests, browser suites and validation records.
 
 ## Checks and known limitations
 
-- At submitted revision `f647c82`, application and server TypeScript checks pass and **409 unit tests pass with no failures or skips**, rerun under Node **22.22.0**. The production build passed for this deployed revision. Coverage includes care timers/history, artwork/identity, embedded gameplay, custom speech, launch validation, wallet holdings, transfers, swaps and receipt recovery. Commands: `npm run typecheck`, `npm run typecheck:server`, `npm test`, `npm run build`.
+- Application and server TypeScript checks pass and **409 unit tests pass with no failures or skips**, rerun under Node **22.22.0**. The production build passed for the deployed application; the latest revision changes README wording only. Coverage includes care timers/history, artwork/identity, embedded gameplay, custom speech, launch validation, wallet holdings, transfers, swaps and receipt recovery. Commands: `npm run typecheck`, `npm run typecheck:server`, `npm test`, `npm run build`.
 - Browser checks cover Preview, care reactions/countdowns, collection/island/body selection, gameplay, PNG/GIF sharing with custom speech, wallet controls, the modal-only Launch entry, redirects, Docs and desktop/mobile layouts. Fixture suites are available for wallet, launch, exports and fee claims.
 - Onchain Play XP is disabled until the completion service and claim flow are connected. Prize seasons and holder rewards are not active. Preview data is local and untrusted.
 - Optional live care, sends, launches, swaps and fee claims require wallet confirmation and gas. Financial operations can move real assets even when reached while browsing Preview; they are not needed for judging. Source/runtime checks and transaction simulations do not constitute an audit or proof that every end-user financial flow has completed on mainnet.
@@ -115,6 +115,6 @@ See the [source README](https://github.com/xibot/rare-pet/blob/f647c82255e834a19
 
 ## Credits
 
-App, interface and gameplay: **XIBOT**. Rare Friends character artwork, canonical body frames and six complete Worlds presets come from Rare Friends/FriendSDK, preserving original artwork and notices. Classic floors and care effects are decorative interface artwork. Doppler supplies launch modules/SDK, and Uniswap supplies trading infrastructure. Silkscreen, Archivo and Sometype Mono retain their font licenses. See [third-party notices](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/THIRD_PARTY_NOTICES.md).
+App, interface and gameplay: **XIBOT**. Rare Friends character artwork, canonical body frames and six complete Worlds presets come from Rare Friends/FriendSDK, preserving original artwork and notices. Classic floors and care effects are decorative interface artwork. Doppler supplies launch modules/SDK, and Uniswap supplies trading infrastructure. Silkscreen, Archivo and Sometype Mono retain their font licenses. See [third-party notices](https://github.com/xibot/rare-pet/blob/f019a0804e2df86fc84e2191451a47ce6436488a/THIRD_PARTY_NOTICES.md).
 
 **Take care. Play. Stay rare.**
