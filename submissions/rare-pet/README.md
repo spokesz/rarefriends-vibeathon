@@ -1,78 +1,120 @@
 # RarePet
 
-**Every Rare Friend is a Rare Pet.**
+**Every Rare Friend is a Rare Pet. Your Rare Friend, every day.**
 
 - **Builder / contact:** XIBOT · [@xavieriturralde on X](https://x.com/xavieriturralde) · [GitHub](https://github.com/xibot).
 - **Category:** Character Spotlight; also relevant to Economy Potential.
-- **One sentence:** RarePet is a Tamagotchi-inspired home for Genesis and Generations Rare Friends, combining daily care, Rare Rush play, floating islands, shareable moments, NFT-owned wallets and a token launchpad.
-- **Working demo:** [rarepet.app](https://rarepet.app) · [App guide](https://rarepet.app/docs/) · [Rare Launchpad](https://rarepet.app/launch/).
-- **Public source:** [xibot/rare-pet](https://github.com/xibot/rare-pet), submitted revision [778e7d2](https://github.com/xibot/rare-pet/tree/778e7d22dd9307c6b307afbf2b33125382668656).
-- **Stack:** React, TypeScript, SVG, Solidity and viem; FriendSDK **0.1.2** for wallet sessions, canonical identity/art/worlds and the embedded Rare Rush integration; Doppler SDK **1.0.43** for token launches.
+- **One sentence:** RarePet gives Genesis and Generations Rare Friends a Tamagotchi-inspired daily life: onchain care, a floating home, Rare Rush play, shareable moments, an NFT-owned wallet, token launches and in-app trading.
+- **Working demo:** [rarepet.app](https://rarepet.app) · [Visual care guide](https://rarepet.app/docs/).
+- **Public source:** [xibot/rare-pet](https://github.com/xibot/rare-pet), submitted revision [f647c82](https://github.com/xibot/rare-pet/tree/f647c82255e834a19b8aeecb06f1e5cc6642bb55).
+- **Stack:** React, TypeScript, SVG, Solidity and viem; FriendSDK **0.1.2** for wallet sessions, canonical identity/art/worlds and the embedded Rare Rush integration; Doppler SDK **1.0.43** for launches.
 
-This is a separate pet-care application from [Rare Rush, entry #22](https://github.com/spokesz/rarefriends-vibeathon/pull/22). It reuses that game's engine for its Play action. The care loop, habitat, exports, Rare Wallet and Rare Launchpad are the focus of this entry.
+**Current V1:** onchain Pet, Feed and Poop are deployed and connected on Robinhood Chain. Rare Wallet, the Doppler launchpad and Buy / Sell are available inside the app. Verified onchain Play XP and rarity-farming prize seasons remain later work. The wallet-free Preview is the simulated judging path; no purchase or transaction is needed to evaluate it.
 
-## Try the core interaction without a wallet
+This is a custom React pet application with its own interface, separate from [Rare Rush, entry #22](https://github.com/spokesz/rarefriends-vibeathon/pull/22). It uses that game's engine for Play. Daily care, the habitat, exports, Rare Wallet, launchpad and trading are the focus of this entry.
+
+## Try it without a wallet
 
 1. Open [rarepet.app](https://rarepet.app). **Preview** is the default; no wallet, RF balance or signature is needed.
-2. Use **Choose Friend → Preview Friends** to try a Generations or Genesis sample.
-3. **Pet**, **Feed** and **Poop** to see reactions, speech bubbles, trait changes and independent cooldowns. Progress stays on this device, separately for each sample Friend.
-4. Choose a **Worlds** or **Classic** island. There are 11 floors with matching drifting background islands. Genesis Friends also have 36 cosmetic body choices while preserving their original portrait.
-5. Open **Play** to run Rare Rush with the selected Friend. Complete a run for Preview XP; closing an unfinished game does not grant XP. The game includes turning shafts, free falls, spinning Friends, flying coins, shields and magnets. Keyboard and touch controls are included.
-6. Open **Share to X**. Pick Pet, Feed or Poop and download a **2000 × 2000 PNG** or **800 × 800 animated GIF**, including the Friend, selected island and speech bubble. Sharing opens a draft; posting and attaching the file remain the user's choice.
-7. Explore the [launch form](https://rarepet.app/launch/) and [guide](https://rarepet.app/docs/). Evaluating the Preview experience does not require a transaction.
+2. Use **Choose Friend → Preview Friends** to try a Genesis or Generations sample.
+3. **Pet**, **Feed** and **Poop** to see different reactions, speech bubbles, trait changes and independent countdowns. Preview progress stays on this device, separately for each sample.
+4. Pick one of **11 islands** across Worlds and Classic. Matching background islands drift through space with visiting Friends. Genesis samples also have **36 cosmetic bodies**, preserving the original portrait.
+5. Open **Play** to run Rare Rush with the selected Friend. Complete a run for Preview XP; an unfinished run earns none. Courses include turning shafts, free falls, spinning Friends, flying coins, shields and magnets.
+6. Open **SHARE ↗**. Choose Pet, Feed or Poop, try another pose, and add a custom speech bubble of up to **21 characters**. Export a **2000 × 2000 PNG** or **800 × 800 animated GIF** with a 2.4-second loop, including the Friend and island. Download + Share on X prepares a draft; attach the file and publish only if you want to.
+7. Open **LAUNCH in Daily Care** to explore the launch form in Preview, and **BUY / SELL** to browse the token catalog. Preview launches create no token and award no Brain. Browsing needs no wallet; actual trades use real assets and are not part of the simulated demo.
+8. Read the [visual guide](https://rarepet.app/docs/) for the action cards, streak timeline, interactive island/body examples and live-versus-later feature map.
 
-Rare Rush controls are Space/Up/W to jump, Down/S to slide, Left/Right to steer or adjust pace according to direction, and P/Escape to pause. The on-screen buttons support touch. Sound and reduced-motion controls are available.
+Rare Rush supports keyboard and touch: Space/Up/W jumps and double-jumps, Down/S slides, Left/Right steers or adjusts pace, and P/Escape pauses. Sound controls and reduced-motion preferences are supported.
 
-## Care rules and roadmap
+## Daily care and permanent history
 
-| Action | Current Preview rule |
+| Action | Starting rule | Reward / status |
+| --- | --- | --- |
+| **Pet** | Once every 24 hours | +1 Kinship; advances the care streak |
+| **Feed** | Once every 4 hours; at most 6 per rolling 24 hours | +1 Strength and +5 Stamina |
+| **Play** | Up to 3 rewarded completed runs per rolling 24 hours in Preview | +10 Preview XP per completion; owned Friends play for practice, **XP soon** |
+| **Launch as a Friend** | One confirmed token launch per rolling 24 hours | +1 Brain in the launch ledger; Preview creates no token or Brain |
+| **Poop** | Once every 4 hours; at most 6 per rolling 24 hours | +1 Health |
+| **Keep a streak** | Every 7 consecutive care cycles | +1 RarePet Rarity |
+
+Pet unlocks 24 hours after the last Pet, followed by a **24-hour grace window**. Miss the deadline and the current streak and its RarePet Rarity reset; Kinship decays. Lifetime earned points, action counts, best streak and action records remain onchain and follow the Friend when ownership changes. RarePet traits are separate from original NFT metadata and collection rarity; cosmetic bodies and islands do not alter either.
+
+The care ledger preserves past records while allowing the care administrator to propose future rule changes through a public **24-hour delay**. Current rewards, limits and countdowns are shown in the dashboard. Stamina accumulates as a trait; it is not spent to enter Play. Preview progress is local, separate from owned care, and has no promised onchain conversion.
+
+**Still to come:** verified game-completion receipts and the client claim flow for onchain Play XP. Rarity-farming seasons are planned to reward greater earned Rarity; season eligibility and prize distribution are not active. Care has no consumable purchase, randomized payout or live prize claim. Rare Rush's displayed demo RF/$RUSH economy is simulated.
+
+## Your Friend's wallet, launches and trading
+
+Use an injected browser wallet on **Robinhood Chain, chain ID 4663**. Owned care supports Genesis and Generations; **Rare Wallet and owned Rare Rush play require Genesis or hardwired Generations**. Ownership and original artwork are rechecked when selecting a Friend. Click the top-right wallet address to disconnect; Choose Friend is for selection and refresh. Mobile users need a compatible wallet browser; WalletConnect is not included.
+
+### Rare Wallet
+
+- View the Friend's canonical wallet address, ETH, ERC-20 tokens and ERC-721/ERC-1155 NFTs; copy addresses and use manual asset lookup when history is incomplete.
+- Send tokens or NFTs **from the Friend's wallet**. The connected NFT owner authorizes the action and pays ETH gas.
+- View **Tokens Launched** with contract addresses, check accrued creator trading fees and claim them into the Friend's wallet. Fees may accrue in both pool tokens.
+- Open **Buy / Sell** inside Rare Wallet to trade using the Friend's balances and receive the output in that same wallet.
+
+### Rare Launchpad
+
+Open it only through **LAUNCH in Daily Care**; there is no separate Launch page. Choose **Launch as Yourself** or **Launch as Your Rare Friend**, then set a name, ticker, image, quote token and **0.3%, 1% or 2%** trading fee.
+
+The live catalog includes **199 quote assets**: **WETH, $RAREFRIENDS, USDG, cbBTC and all 195 stock/ETF tokens in the pinned supported Robinhood catalog**. Token identity, decimals and price inputs are checked before preparation; unavailable or stale prices block the launch.
+
+The Doppler preset assigns **1 billion tokens, 100% of supply, to liquidity** with no creator token allocation. The approximately **$10,000 starting fully diluted value** is a pricing preset, not funds raised or a guaranteed value. Friend launches receive +1 Brain with a 24-hour cooldown. Self launches require no NFT, have no Friend cooldown and award no Brain.
+
+| Share of collected trading fees | Recipient |
 | --- | --- |
-| Pet | Once every 24 hours; +1 Kinship and advance the care streak |
-| Feed | Once every 4 hours; +1 Strength and +5 Stamina |
-| Play | Up to 3 rewarded completions per rolling 24 hours; +10 Experience each |
-| Poop | Once every 4 hours; +1 Health |
-| Rarity | +1 RarePet Rarity per 7 consecutive care cycles |
+| **85%** | Creator: the connected wallet or selected Rare Wallet |
+| **10%** | RarePet treasury, intended to fund future prizes |
+| **5%** | Doppler |
 
-After Pet unlocks at 24 hours, a further 24-hour grace window preserves the bond. Missing the deadline breaks the streak, resets its RarePet Rarity and decreases Kinship. Each additional missed day decreases Kinship again, down to zero. These are separate RarePet traits; original NFT metadata and collection rarity are unchanged.
+Fees depend on actual trading. V1 includes creator fee claims; token-holder rewards are not included. Brain is recorded by the separate launch ledger.
 
-**Vibeathon status:** the new care ledger is implemented and locally tested but is **not deployed**. Pet/Feed/Poop points and gameplay XP are currently Preview features. Connecting an owned Friend does not turn Preview points into onchain records. Fully onchain care traits are planned after this testing stage; live XP also requires a verified game-completion service.
+### Buy / Sell inside RarePet
 
-**Later, after the mainnet care rollout:** a rarity farming season is planned in which higher RarePet Rarity earns larger prize rewards. The season, prize distribution and eligibility are not active. No Preview-to-mainnet progress conversion is promised.
+**Find a Token** is a searchable dropdown for ecosystem assets and confirmed RarePet launches. Browse compact horizontal token cards in a scrollable four-column desktop grid, with category filters and a mobile layout.
 
-Care has no RF purchase, consumable spend, randomized payout or live prize claim. Rare Rush's displayed demo RF/$RUSH economy is simulated; it is not an asset balance or redemption promise.
+The main Buy / Sell action spends from and returns tokens to the **connected owner wallet**. The same form inside Rare Wallet uses the **Friend's wallet**. Neither route opens an external DEX, changes traits or has a care cooldown. Trading and self launches do not require an NFT.
 
-## Optional owned-wallet features
+Trades use existing Uniswap V3/V4 infrastructure and the launched tokens' Doppler pools. Review the amount, quote, slippage and minimum received, approve the displayed amount when needed, then confirm. Routing credentials remain server-side. RarePet adds no extra trading fee and preserves each pool's fee setup. A listing does not guarantee an available route or liquidity; ETH is needed for gas.
 
-**My Wallet** requires an injected browser wallet on **Robinhood Chain, chain ID 4663**, holding a supported Genesis or Generations NFT. Ownership and canonical artwork are checked again when selecting a Friend. Rare Wallet and owned Rare Rush play support Genesis and hardwired Generations; a self launch does not require an NFT. WalletConnect is not included; mobile users need a compatible wallet browser.
+## Mainnet contracts and source verification
 
-- **Rare Wallet:** inspect the Friend's canonical account address, ETH, ERC-20 tokens and ERC-721/ERC-1155 NFTs. Copy addresses, review sends from the **Friend's wallet**, inspect launched-token contract addresses and claim accrued creator trading fees into that wallet. The connected owner authorizes transactions and pays network gas.
-- **Rare Launchpad:** choose **Launch as Yourself** or **Launch as Your Rare Friend**; enter name, ticker and image; choose WETH or an individually supported Robinhood stock/ETF token and a 0.3%, 1% or 2% trading fee. The Doppler preset assigns the full one-billion-token supply to liquidity, with no creator token allocation. The RF route allows one confirmed launch per rolling 24 hours; the self route has no daily limit.
-- **Initial trading-fee split:** **85% creator / 10% RarePet treasury / 5% Doppler**. The creator is the connected wallet or selected RF wallet. Fee income depends on actual trading; treasury-funded prizes remain a future feature.
+| Current RarePet contract | Address / Blockscout | Source status |
+| --- | --- | --- |
+| **Care ledger** | [0x0082229d9592292E2542cb29a6b94d9a2F22d124](https://robinhoodchain.blockscout.com/address/0x0082229d9592292E2542cb29a6b94d9a2F22d124?tab=contract) | Verified — exact match |
+| **Launch router** | [0xc6a4b2D4D369747B26e4Ff805a79A57da2505dC3](https://robinhoodchain.blockscout.com/address/0xc6a4b2D4D369747B26e4Ff805a79A57da2505dC3?tab=contract) | Verified — partial match |
 
-These optional wallet and launch operations are **live**, separate from Preview care. The deployed launch router is [0x8c46baA63079B8648b1cd5689058E0AAB33DF063](https://robinhoodchain.blockscout.com/address/0x8c46baA63079B8648b1cd5689058E0AAB33DF063). Its separate launch ledger records RF launches/Brain independently of the undeployed care ledger. [Deployment evidence and limitations](https://github.com/xibot/rare-pet/blob/778e7d22dd9307c6b307afbf2b33125382668656/contracts/rare-launchpad/README.md).
+Source badges were checked on September 26, 2026. Exact deployed runtime and configuration checks are recorded separately in the [care manifest](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/contracts/rare-pet/deployments/4663.json) and [launch manifest](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/contracts/rare-launchpad/deployments/4663-0xc6a4b2d4d369747b26e4ff805a79a57da2505dc3.json). **Source verification is not a security audit; the custom RarePet contracts have not been independently audited.**
+
+The original router, `0x8c46baA63079B8648b1cd5689058E0AAB33DF063`, remains for historical launch discovery and fee claims, not new launches. It does not have its own verified-source badge. Historical holder-reward experiments are not used by V1.
 
 ## Run locally
 
-Use Node.js **22.18 or later in the 22.x line** and npm:
+Use **Node.js 22.18 or later in the 22.x line** and npm:
 
 ```sh
 git clone https://github.com/xibot/rare-pet.git
 cd rare-pet
-git checkout 778e7d22dd9307c6b307afbf2b33125382668656
+git checkout f647c82255e834a19b8aeecb06f1e5cc6642bb55
 npm ci
 npm run dev
 ```
 
-Open **http://localhost:4175**. No secrets or environment variables are needed for the Preview demo. `npm run build` produces `dist-pet/`, including `/docs/` and `/launch/`. Live contract addresses and server-side image storage require the documented configuration; never add a private key to the frontend. See the [source README](https://github.com/xibot/rare-pet/blob/778e7d22dd9307c6b307afbf2b33125382668656/README.md) for setup, contract tests, browser suites and asset credits.
+Open **http://localhost:4175**. No secrets or environment variables are needed for the Preview demo. `npm run build` produces `dist-pet/`, including the main app and `/docs/`. Launch opens from its Daily Care action. Live contract addresses, image storage and server-side routing use the documented configuration; never put a private key in the frontend.
+
+See the [source README](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/README.md) and [developer guide](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/docs/DEVELOPMENT.md) for configuration, contract tests, browser suites and validation records.
 
 ## Checks and known limitations
 
-- Submission checks: application and server TypeScript checks, **259 passing unit tests**, and the production build. Tests cover care timers/streaks, artwork/identity, the embedded engine, launch validation, wallet holdings, authorized transfers and receipt recovery.
-- Browser verification covers the public wallet-free demo, care reactions/timers, collection selection, island/body choices, embedded gameplay, image sharing and desktop/mobile layouts. The repository also includes fixture-based wallet, launch, GIF export and claim suites.
-- Preview progress is local and untrusted. Onchain care deployment, verified XP completion and the rarity farming season remain future work.
-- Real wallet sends, launches and claims can move assets and spend gas. They are optional for judging. The launch router's deployed runtime/configuration were independently compared with source, but **the contracts are not audited**. No successful end-user token launch or fee claim is claimed by the submission checks; live-route verification used public reads and simulations.
-- Public RPC availability and bounded history scans can limit asset discovery; manual asset lookup is available. The stock/ETF catalog is pinned and fail-closed price checks can prevent a launch. Token images depend on configured Vercel Blob storage. Browser wallets, chain access and gas are required for live operations.
+- At submitted revision `f647c82`, application and server TypeScript checks pass and **409 unit tests pass with no failures or skips**, rerun under Node **22.22.0**. The production build passed for this deployed revision. Coverage includes care timers/history, artwork/identity, embedded gameplay, custom speech, launch validation, wallet holdings, transfers, swaps and receipt recovery. Commands: `npm run typecheck`, `npm run typecheck:server`, `npm test`, `npm run build`.
+- Browser checks cover Preview, care reactions/countdowns, collection/island/body selection, gameplay, PNG/GIF sharing with custom speech, wallet controls, the modal-only Launch entry, redirects, Docs and desktop/mobile layouts. Fixture suites are available for wallet, launch, exports and fee claims.
+- Onchain Play XP is disabled until the completion service and claim flow are connected. Prize seasons and holder rewards are not active. Preview data is local and untrusted.
+- Optional live care, sends, launches, swaps and fee claims require wallet confirmation and gas. Financial operations can move real assets even when reached while browsing Preview; they are not needed for judging. Source/runtime checks and transaction simulations do not constitute an audit or proof that every end-user financial flow has completed on mainnet.
+- Public RPC availability and bounded history scans can limit discovery; manual lookup is available. Catalog assets need liquidity and a supported route. Price checks can block a launch; token-image publication requires configured storage, and broad route discovery requires server-side routing configuration.
 
 ## Credits
 
-App, interface and Rare Rush integration: **XIBOT**. Rare Friends character artwork, canonical body frames and six complete Worlds presets come from Rare Friends/FriendSDK, preserving original character artwork and notices. Classic floors and care effects are decorative interface artwork. Doppler provides the launch modules/SDK. Silkscreen, Archivo and Sometype Mono retain their font licenses. See [third-party notices](https://github.com/xibot/rare-pet/blob/778e7d22dd9307c6b307afbf2b33125382668656/THIRD_PARTY_NOTICES.md).
+App, interface and Rare Rush integration: **XIBOT**. Rare Friends character artwork, canonical body frames and six complete Worlds presets come from Rare Friends/FriendSDK, preserving original artwork and notices. Classic floors and care effects are decorative interface artwork. Doppler supplies launch modules/SDK, and Uniswap supplies trading infrastructure. Silkscreen, Archivo and Sometype Mono retain their font licenses. See [third-party notices](https://github.com/xibot/rare-pet/blob/f647c82255e834a19b8aeecb06f1e5cc6642bb55/THIRD_PARTY_NOTICES.md).
+
+**Take care. Play. Stay rare.**
