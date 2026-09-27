@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/d51a4abdac293fbaa8e90c6301adf5ac8f9770af) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/391d26e37fbff3514a68a4e4daae656cef6710f9) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -58,8 +58,8 @@ Everything is simulated.
 - The shore is free. You start that walk with 5 coins.
 - Every fog after the shore costs 5 Rare coins. 20 Rare coins opens every fog, and those walks do not charge again. This preview locks every fog except the shore. The moon is not included.
 - A death burns half the coins you are carrying. Three lives, then you return to the menu. The shore is still free.
-- A lantern costs 1 collected coin and lasts 10 seconds on the dark boards. A flashlight costs 5 collected coins.
-- The red cape is locked. The white cape opens October 1 and then costs 10 Rare coins. Bought clothes stay on that wallet in this browser.
+- Half of every coin you spend is burned. A lantern costs 1 collected coin and lasts 10 seconds on the dark boards. A flashlight costs 5 collected coins.
+- The red cape costs 10 Rare coins. The white cape opens October 1 and then costs 10 Rare coins. Bought clothes stay on that wallet in this browser.
 
 ## What have you tested?
 
