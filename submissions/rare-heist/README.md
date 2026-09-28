@@ -24,7 +24,7 @@ A turn-based stealth heist in a 1-bit cutaway building where the thief is your o
 
 Pitch: https://warninghejo-blip.github.io/rare-heist/pitch/
 
-Trailer (1:28, cut from the game's own engine and renderer): [720p](https://github.com/warninghejo-blip/rare-heist/blob/main/media/rare-heist-trailer-720p.mp4) · [1080p](https://github.com/warninghejo-blip/rare-heist/blob/main/media/rare-heist-trailer.mp4)
+Trailer (1:50, cut from the game's own engine and renderer): [720p](https://github.com/warninghejo-blip/rare-heist/blob/main/media/rare-heist-trailer-720p.mp4) · [1080p](https://github.com/warninghejo-blip/rare-heist/blob/main/media/rare-heist-trailer.mp4)
 
 Every level, solved (proof video, 2:44: all 23 levels beaten by the stored solutions, rendered by the game's own engine): [720p](https://github.com/warninghejo-blip/rare-heist/blob/main/media/all-levels-solved-720p.mp4) · [1080p](https://github.com/warninghejo-blip/rare-heist/blob/main/media/all-levels-solved.mp4)
 
