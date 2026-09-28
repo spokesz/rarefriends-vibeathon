@@ -107,7 +107,7 @@ Studio → **RF ECONOMY** leads with stake rounds: DEMO RF in live pots, entrant
 
 Faking a contest with a second session burns 30% of your own stake, so self-dealing never profits. The production design ([docs/STAKES.md](https://github.com/warninghejo-blip/rare-heist/blob/3e486a79d1cb7a3dfaa4b86b4d6a9df905eb4dff/docs/STAKES.md)) is an escrow on Robinhood Chain: `stake(roundId, friendId)` after `approve`, one Friend one entry checked with `ownerOf`, the result posted by a server key with a challenge window and checkable by anyone replaying the published routes, 30% sent to `0x…dEaD` in the settlement transaction, the prize claimed by the winning Friend's token-bound account, liveness refunds, pause without trapping funds, and an audit checklist. It stays simulated for now: the rules ask for it, the contract is not written or audited, and guest sessions are not people.
 
-First mainnet burn through the game: none yet at submission time. The burn ledger in Studio → LIVE BURN lists every Rare Heist burn from chain logs as it happens.
+First mainnet burn through the game: 10 RF for the Hatchwork theme, [tx 0xcf6b…3957](https://robinhoodchain.blockscout.com/tx/0xcf6bfaab4be51e170cdadbe54d4a6316015e4026327a705377124c4163143957) (block 75042802, `Transfer` to `0x…dEaD`, receipt checked in-game). The burn ledger in Studio → LIVE BURN lists every Rare Heist burn from chain logs.
 
 Economy design, the burn ledger, the calculator model and what would go on-chain next: [docs/ECONOMY.md](https://github.com/warninghejo-blip/rare-heist/blob/3e486a79d1cb7a3dfaa4b86b4d6a9df905eb4dff/docs/ECONOMY.md).
 
