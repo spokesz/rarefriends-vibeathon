@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/e207da43612e8d194482d93f9407e918426f3364) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/2a3de4ce11ce115565e757c675fddd42ea4a6eef) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
