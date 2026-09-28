@@ -6,7 +6,7 @@ A turn-based Rare Friends **mind-game fighter**: your own Generations NFT battle
 
 - **▶ Playable preview:** https://siraj-hm.github.io/blindside/
 - **🎬 Trailers:** [16:9](https://github.com/Siraj-HM/blindside/releases/download/vibeathon-v1/blindside-trailer.mp4) · [9:16](https://github.com/Siraj-HM/blindside/releases/download/vibeathon-v1/blindside-trailer-x-portrait.mp4)
-- **Source:** [Siraj-HM/blindside · games/blindside](https://github.com/Siraj-HM/blindside/tree/3b24e77fc4d4293ed54989375052a4f88bd44578/games/blindside) · [Game rules (game.json)](https://github.com/Siraj-HM/blindside/blob/3b24e77fc4d4293ed54989375052a4f88bd44578/games/blindside/game.json)
+- **Source:** [Siraj-HM/blindside · games/blindside](https://github.com/Siraj-HM/blindside/tree/ad1ca16b00fc6df81e0af8a010e3cf3c6bf8b8d2/games/blindside) · [Game rules (game.json)](https://github.com/Siraj-HM/blindside/blob/ad1ca16b00fc6df81e0af8a010e3cf3c6bf8b8d2/games/blindside/game.json)
 - **Requirements:** a browser wallet on **Robinhood mainnet (4663)** holding a hardwired Rare Friends Generations NFT (**generation ≥ 1**). The SDK runtime connects the wallet and verifies ownership; play needs no RF funding, approval or transaction signature.
 
 ![BLINDSIDE hub](images/hub.png)
@@ -15,6 +15,7 @@ A turn-based Rare Friends **mind-game fighter**: your own Generations NFT battle
 
 - **Simultaneous hidden moves.** Both fighters lock in blind and reveal together. Energy is public; moves are not. Every turn is a read.
 - **A counter triangle with a resource.** Guard beats Strike, Charge beats Guard, Strike beats Charge, and Charge builds the energy for a 38-damage Special.
+- **Rivals with personalities.** Each ladder rival plays a distinct style with a readable weakness: PIP the Turtle hides behind Guard, DRIFT the Mimic copies you, GOO the Patient punishes greed, GLINT the Gambler hoards energy, BONES the Berserker never blocks, and TITAN the Warlord quakes through your guard.
 - **An AI that learns you.** Later rivals track your recent habits and simulate every response through the real rules engine to counter them.
 - **Your Friend's family is a fighting style.** The game reads the family from the canonical artwork registry and grants one of nine traits.
 - **Pass & play PvP** on one device, a **Survival** mode where HP carries between waves, and a 5-rival **ladder** ending in the TITAN boss.
@@ -26,7 +27,7 @@ Node.js 22+, from the source repository (a FriendSDK v0.1.2 fork):
 ```sh
 git clone https://github.com/Siraj-HM/blindside.git
 cd blindside
-git checkout 3b24e77fc4d4293ed54989375052a4f88bd44578
+git checkout ad1ca16b00fc6df81e0af8a010e3cf3c6bf8b8d2
 npm ci
 npm run build
 npm run dev:game -- games/blindside
@@ -52,7 +53,7 @@ Click or tap, or use keys `1–4` for moves, `Q W E R T` to arm a card, `P` to p
 **Family traits:** Skeleton (Strikes +3) · Mask (peek at the AI's move once per duel) · Family (start with 1 energy) · Cellular (heal 3 on Guard) · Asymmetry (25% double Strike) · Hoverer (dodge the first hit) · Colossus (130 HP) · Sparkling (Special costs 2) · Hollow (blocked Strikes reflect +6).
 
 **Modes**
-- **Ladder:** PIP, DRIFT, GOO, GLINT, BONES, then **TITAN** (120 HP, telegraphed Quakes through Guard every third turn). Early rivals play on instinct; later ones read you.
+- **Ladder:** PIP (Turtle), DRIFT (Mimic), GOO (Patient), GLINT (Gambler), BONES (Berserker), then **TITAN** the Warlord (120 HP, telegraphed Quakes through Guard every third turn). Each rival card shows its personality and a tip for beating it. Early rivals play on instinct; later ones read you.
 - **Survival:** endless waves; **HP never resets**, each win heals +20 (+40 after a boss), TITAN every 5th wave. One loss ends the run; best run shown on the hub.
 - **Pass & Play PvP:** Player 1 is the verified Friend, Player 2 picks a rival avatar; picks are made in turn behind a hand-over screen, then revealed together. Cards are off in PvP.
 
@@ -81,16 +82,17 @@ Expected reward: **0.88 RF per pack**. Each purchased or pending pack reserves t
 From the repository root:
 
 ```sh
-node --test games/blindside/engine.test.ts    # 16 rules + AI tests
+node --test games/blindside/engine.test.ts    # 22 rules, AI and personality tests
 npx friendsdk check games/blindside           # game validation
 npx friendsdk test games/blindside            # browser smoke test (also --width 360)
 node scripts/test-blindside.mjs               # ladder duel, pack buy/open/keep, card tray, PvP round
 node scripts/test-survival.mjs                # HP carry-over, heals, rivals attack
+node scripts/test-survival-deep.mjs           # run to the wave-5 TITAN boss, Quakes, run-over path
 node scripts/test-timer-critical.mjs          # critical HP and move-clock timeout
 node scripts/test-fx-duel.mjs                 # combat effects in PvP
 ```
 
-All pass: 16 unit tests; `friendsdk check` valid (expected reward 0.88 RF, maximum 5 RF); desktop and 360 px browser checks; and the scripted playthroughs above. Difficulty was tuned by simulation (the boss is beatable and Survival reaches the first TITAN for a solid player). Browser tests use the SDK's mocked wallet/RPC; a real-wallet playthrough (Friend discovery, ownership gate, pack purchase) was also completed.
+All pass: 22 unit tests; `friendsdk check` valid (expected reward 0.88 RF, maximum 5 RF); desktop and 360 px browser checks; and the scripted playthroughs above. Difficulty was tuned by simulation (the boss is beatable and Survival reaches the first TITAN for a solid player). Browser tests use the SDK's mocked wallet/RPC; a real-wallet playthrough (Friend discovery, ownership gate, pack purchase) was also completed.
 
 Credits: the selected Friend's canonical sprite and family come from the SDK sprite reader; rival sprites are canonical registry artwork read with `frames(familyId, seed)` and bundled with their source recorded in `rivals.json` (see the SDK's NOTICE.md). UI and pack sounds use the SDK sound kit; combat effects are synthesized with Web Audio (no audio files). The trailer soundtrack is procedurally generated. Built with AI assistance (Claude Code).
 
