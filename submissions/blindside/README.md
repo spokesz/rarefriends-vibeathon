@@ -6,10 +6,10 @@ A turn-based Rare Friends **mind-game fighter**: your own Generations NFT battle
 
 - **▶ Playable preview:** https://siraj-hm.github.io/blindside/
 - **🎬 Trailers:** [16:9](https://github.com/Siraj-HM/blindside/releases/download/vibeathon-v1/blindside-trailer.mp4) · [9:16](https://github.com/Siraj-HM/blindside/releases/download/vibeathon-v1/blindside-trailer-x-portrait.mp4)
-- **Source:** [Siraj-HM/blindside · games/blindside](https://github.com/Siraj-HM/blindside/tree/c1151091914862c9303790ea92edfec94d6b6f9d/games/blindside) · [Game rules (game.json)](https://github.com/Siraj-HM/blindside/blob/c1151091914862c9303790ea92edfec94d6b6f9d/games/blindside/game.json)
+- **Source:** [Siraj-HM/blindside · games/blindside](https://github.com/Siraj-HM/blindside/tree/add61e84134c56fd075b619ec0449129eabb0bf8/games/blindside) · [Game rules (game.json)](https://github.com/Siraj-HM/blindside/blob/add61e84134c56fd075b619ec0449129eabb0bf8/games/blindside/game.json)
 - **Requirements:** a browser wallet on **Robinhood mainnet (4663)** holding a hardwired Rare Friends Generations NFT (**generation ≥ 1**). The SDK runtime connects the wallet and verifies ownership; play needs no RF funding, approval or transaction signature.
 
-![BLINDSIDE hub](images/hub.png)
+![BLINDSIDE gameplay: your Friend's identity, a Special cut-in, random finishers, a K.O., then Daily, Ghosts and the SHADOW boss](images/blindside.gif)
 
 ## What makes it different
 
@@ -30,7 +30,7 @@ Node.js 22+, from the source repository (a FriendSDK v0.1.3 fork):
 ```sh
 git clone https://github.com/Siraj-HM/blindside.git
 cd blindside
-git checkout c1151091914862c9303790ea92edfec94d6b6f9d
+git checkout add61e84134c56fd075b619ec0449129eabb0bf8
 npm ci
 npm run build
 npm run dev:game -- games/blindside
@@ -76,7 +76,7 @@ Stat bonuses are small by design and switched off in PvP. Unit tests check that 
 - **Survival:** endless waves; **HP never resets**, each win heals +20 (+40 after a boss), TITAN every 5th wave. One loss ends the run; best run shown on the hub.
 - **Pass & Play PvP:** Player 1 is the verified Friend, Player 2 picks a rival avatar; picks are made in turn behind a hand-over screen, then revealed together. Cards are off in PvP.
 
-**Combat feedback:** a hex shield on Guard that flashes on a block, cracks under a halved Special and shatters on a **GUARD BREAK** (Quick Jab, Supernova or Quake); charge auras that fizzle when interrupted; lunges, slashes, beams, quake shockwaves; a K.O. sequence; procedural sound effects.
+**Combat feedback:** every **Special** opens with an anime cut-in (your Friend, its named Special, speed lines) and lands one of five finishers **picked at random**, never the same twice in a row: Hyper Beam, Meteor Drop, Thunderclap, Pixel Barrage or Void Vortex (the legendary Supernova card has its own star burst), each with its own sound. Guarding raises a hex shield that flashes on a block, cracks under a halved Special and shatters on a **GUARD BREAK** (Quick Jab, Supernova or Quake); charge auras fizzle when interrupted; lunges, slashes and quake shockwaves; a K.O. sequence; procedural sound effects.
 
 ![Guard, block, crack, guard break, charge, fizzle](images/combat-effects.png)
 
