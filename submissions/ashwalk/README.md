@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/9adad377c1dcfb6813a866e0c13e8a9732f598cd) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/cfa6dfe9135e68beb81a8a86565f9b4d34e43d81) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -37,7 +37,7 @@ Open the printed URL.
 
 ## Playable demo
 
-[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=84](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=84)
+[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=89](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=89)
 
 Open that link in a normal browser or in the MetaMask browser. The game fills the screen. The shore can be walked without a payment. Buying a later board, a cape, or an extra life asks the wallet to send Rare coins.
 
