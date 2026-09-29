@@ -6,7 +6,7 @@
 - **Category:** Character Spotlight; also relevant to Economy Potential.
 - **One sentence:** RarePet gives Genesis and Generations Rare Friends a Tamagotchi-inspired daily life: onchain care, a floating home, arcade play, shareable moments, an NFT-owned wallet, token launches, in-app trading and agent-assisted care.
 - **Working demo:** [rarepet.app](https://rarepet.app) · [Visual care guide](https://rarepet.app/docs/) · [AGENT page](https://rarepet.app/agent/) · [Download rarepet skill](https://rarepet.app/skills/rarepet.zip).
-- **Public source:** [xibot/rare-pet](https://github.com/xibot/rare-pet), submitted revision [bab5ed0](https://github.com/xibot/rare-pet/tree/bab5ed08adcbe3fa63b3e952d72723352018175b).
+- **Public source:** [xibot/rare-pet](https://github.com/xibot/rare-pet), submitted revision [ee5f7ca](https://github.com/xibot/rare-pet/tree/ee5f7cad053ee6cedb2e7d941cde6bf37ed14041).
 - **Stack:** React, TypeScript, SVG, Solidity and viem; FriendSDK **0.1.2** for wallet sessions and canonical identity, artwork and worlds; Doppler SDK **1.0.43** for launches.
 
 **Current V1:** onchain Pet, Feed and Poop are deployed and connected on Robinhood Chain. Rare Wallet, the Doppler launchpad and Buy / Sell are available inside the app. The AGENT page and downloadable rarepet skill support care checks, unsigned care plans and routines through an agent’s own authorized wallet and scheduler. Verified onchain Play XP and rarity-farming prize seasons remain later work. The wallet-free Preview is the simulated judging path; no purchase or transaction is needed to evaluate it.
@@ -30,7 +30,7 @@ The arcade supports keyboard and touch: Space/Up/W jumps and double-jumps, Down/
 
 ## Your Friend. Your agent.
 
-The **rarepet skill** gives humans and agents one entry point to RarePet. The [AGENT page](https://rarepet.app/agent/) includes a visual introduction, two installation paths, capability cards, copyable care/wallet/launch/trade prompts and direct downloads. The header Friend animates using its canonical idle frames.
+The **rarepet skill v1.0.1** gives humans and agents one entry point to RarePet. The [AGENT page](https://rarepet.app/agent/) includes a visual introduction, two installation paths, capability cards, copyable care/wallet/launch/trade prompts and direct downloads. The header Friend animates using its canonical idle frames.
 
 | Step | What the agent can do |
 | --- | --- |
@@ -109,7 +109,7 @@ Trades use existing Uniswap V3/V4 infrastructure and the launched tokens' Dopple
 | **Care ledger** | [0x0082229d9592292E2542cb29a6b94d9a2F22d124](https://robinhoodchain.blockscout.com/address/0x0082229d9592292E2542cb29a6b94d9a2F22d124?tab=contract) | Verified — exact match |
 | **Launch router** | [0xc6a4b2D4D369747B26e4Ff805a79A57da2505dC3](https://robinhoodchain.blockscout.com/address/0xc6a4b2D4D369747B26e4Ff805a79A57da2505dC3?tab=contract) | Verified — partial match |
 
-Source badges were checked on September 26, 2026. Exact deployed runtime and configuration checks are recorded separately in the [care manifest](https://github.com/xibot/rare-pet/blob/bab5ed08adcbe3fa63b3e952d72723352018175b/contracts/rare-pet/deployments/4663.json) and [launch manifest](https://github.com/xibot/rare-pet/blob/bab5ed08adcbe3fa63b3e952d72723352018175b/contracts/rare-launchpad/deployments/4663-0xc6a4b2d4d369747b26e4ff805a79a57da2505dc3.json). **Source verification is not a security audit; the custom RarePet contracts have not been independently audited.**
+Source badges were checked on September 26, 2026. Exact deployed runtime and configuration checks are recorded separately in the [care manifest](https://github.com/xibot/rare-pet/blob/ee5f7cad053ee6cedb2e7d941cde6bf37ed14041/contracts/rare-pet/deployments/4663.json) and [launch manifest](https://github.com/xibot/rare-pet/blob/ee5f7cad053ee6cedb2e7d941cde6bf37ed14041/contracts/rare-launchpad/deployments/4663-0xc6a4b2d4d369747b26e4ff805a79a57da2505dc3.json). **Source verification is not a security audit; the custom RarePet contracts have not been independently audited.**
 
 The original router, `0x8c46baA63079B8648b1cd5689058E0AAB33DF063`, remains for historical launch discovery and fee claims, not new launches. It does not have its own verified-source badge. Historical holder-reward experiments are not used by V1.
 
@@ -120,18 +120,19 @@ Use **Node.js 22.18 or later in the 22.x line** and npm:
 ```sh
 git clone https://github.com/xibot/rare-pet.git
 cd rare-pet
-git checkout bab5ed08adcbe3fa63b3e952d72723352018175b
+git checkout ee5f7cad053ee6cedb2e7d941cde6bf37ed14041
 npm ci
 npm run dev
 ```
 
 Open **http://localhost:4175**. No secrets or environment variables are needed for the Preview demo. `npm run build` produces `dist-pet/`, including the main app, `/docs/`, `/agent/`, the skill ZIP and agent-readable resources. Launch opens from its Daily Care action. Live contract addresses, image storage and server-side routing use the documented configuration; never put a private key in the frontend.
 
-See the [source README](https://github.com/xibot/rare-pet/blob/bab5ed08adcbe3fa63b3e952d72723352018175b/README.md) and [developer guide](https://github.com/xibot/rare-pet/blob/bab5ed08adcbe3fa63b3e952d72723352018175b/docs/DEVELOPMENT.md) for configuration, contract tests, browser suites and validation records.
+See the [source README](https://github.com/xibot/rare-pet/blob/ee5f7cad053ee6cedb2e7d941cde6bf37ed14041/README.md) and [developer guide](https://github.com/xibot/rare-pet/blob/ee5f7cad053ee6cedb2e7d941cde6bf37ed14041/docs/DEVELOPMENT.md) for configuration, contract tests, browser suites and validation records.
 
 ## Checks and known limitations
 
 - At revision **bab5ed0**, application and server TypeScript checks and the production build pass; **532 unit tests pass with no failures or skips** under Node **22.22.0**. Coverage includes care timers/history, artwork/identity, gameplay, custom speech, six sharing moments, scoped completion celebrations, audio, launch validation, wallet session restoration, holdings, transfers, swaps, receipt recovery, agent status/plans and skill packaging/download routes. Commands: `npm run typecheck`, `npm run typecheck:server`, `npm test`, `npm run build`.
+- The final **ee5f7ca** skill refresh adds the matching care-celebration and Play-audio guidance. All **14 helper/package checks** passed, the ZIP CRC and every file checksum matched, and a read-only mainnet status check completed successfully. The production build passed and the refreshed package is deployed. The helper’s transaction capabilities are unchanged.
 - Browser checks cover Preview, care reactions/countdowns, collection/island/body selection, gameplay, PNG/GIF sharing with custom speech, wallet controls, the modal-only Launch entry, redirects, Docs and desktop/mobile layouts. The September 28 update also checked the AGENT setup/download link, manual setup copy, new Docs section and expandable scheduled-care guidance in the browser. The September 29 checks covered the six sharing modes, the completed-run controller celebration and return to idle, unchanged Preview XP, and closing unfinished actions without a celebration. Rocket poses and mobile layout were checked with the actual habitat components in a local fixture; no launch transaction was sent for these visual checks. Fixture suites are available for wallet, launch, exports and fee claims.
 - Onchain Play XP is disabled until the completion service and claim flow are connected. Prize seasons and holder rewards are not active. Preview data is local and untrusted.
 - Optional live care, sends, launches, swaps and fee claims require wallet confirmation and gas. Financial operations can move real assets even when reached while browsing Preview; they are not needed for judging. Source/runtime checks and transaction simulations do not constitute an audit or proof that every end-user financial flow has completed on mainnet.
@@ -139,6 +140,6 @@ See the [source README](https://github.com/xibot/rare-pet/blob/bab5ed08adcbe3fa6
 
 ## Credits
 
-App, interface and gameplay: **XIBOT**. Rare Friends character artwork, canonical body frames and six complete Worlds presets come from Rare Friends/FriendSDK, preserving original artwork and notices. Classic floors and care effects are decorative interface artwork. The habitat’s two 8-bit soundtracks and care effects are generated in the browser with Web Audio. Doppler supplies launch modules/SDK, and Uniswap supplies trading infrastructure. Silkscreen, Archivo and Sometype Mono retain their font licenses. See [third-party notices](https://github.com/xibot/rare-pet/blob/bab5ed08adcbe3fa63b3e952d72723352018175b/THIRD_PARTY_NOTICES.md).
+App, interface and gameplay: **XIBOT**. Rare Friends character artwork, canonical body frames and six complete Worlds presets come from Rare Friends/FriendSDK, preserving original artwork and notices. Classic floors and care effects are decorative interface artwork. The habitat’s two 8-bit soundtracks and care effects are generated in the browser with Web Audio. Doppler supplies launch modules/SDK, and Uniswap supplies trading infrastructure. Silkscreen, Archivo and Sometype Mono retain their font licenses. See [third-party notices](https://github.com/xibot/rare-pet/blob/ee5f7cad053ee6cedb2e7d941cde6bf37ed14041/THIRD_PARTY_NOTICES.md).
 
 **Take care. Play. Stay rare.**
