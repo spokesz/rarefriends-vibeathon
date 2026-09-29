@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/cfa6dfe9135e68beb81a8a86565f9b4d34e43d81) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/c4e0e8212fdb1c0925c885af0c5d00b7f9831ee6) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -37,7 +37,7 @@ Open the printed URL.
 
 ## Playable demo
 
-[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=89](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=89)
+[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=91](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=91)
 
 Open that link in a normal browser or in the MetaMask browser. The game fills the screen. The shore can be walked without a payment. Buying a later board, a cape, or an extra life asks the wallet to send Rare coins.
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a thin plank. E pulls a rope, lights a bell, buys a lantern, or climbs a ladder. On the hoist, Down climbs down. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the menu. Sound is on. Each fog has its own music, and a jump plays a hop.
 
-The shore is free and starts with 2 coins picked up in the stage. Beat a fog before the next one can be bought. Every board after the shore is 25 Rare coins. The moon opens October 1, the hallow October 31, the mirror November 1, the tunnel December 1, the eve December 25, and the hoist January 1st. Until then those maps say coming soon and stay locked. Only the shore is open now.
+The shore is free and starts with 2 coins picked up in the stage. Two planks appear only while a lantern is lit, and a shrine raises one long plank that falls once you step off. After the gate, four swinging cages lead to the last friend. Beat a fog before the next one can be bought. Every board after the shore is 25 Rare coins. The moon opens October 1, the hallow October 31, the mirror November 1, the tunnel December 1, the eve December 25, and the hoist January 1st. Until then those maps say coming soon and stay locked. Only the shore is open now.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
