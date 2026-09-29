@@ -5,7 +5,7 @@
 **Builder / contact:** [@Dingufira88](https://github.com/Dingufira88)  
 **Category:** Economy Potential  
 **Working demo:** [dingufira88.github.io/friendos](https://dingufira88.github.io/friendos/)  
-**Source:** [FriendOS at submission commit `2ce4a53`](https://github.com/Dingufira88/friendos/tree/2ce4a536313fa90887d083d92dcf4f126b87bfe7)
+**Source:** [FriendOS at submission commit `816caf6`](https://github.com/Dingufira88/friendos/tree/816caf63ee02b2226d5c0c3b154ab48d9c694e0d)
 
 ## One sentence
 
@@ -71,7 +71,7 @@ Stack: React 19, TypeScript, Vite, FriendSDK v0.1.2, Zustand, Framer Motion, Zod
 ```sh
 git clone https://github.com/Dingufira88/friendos.git
 cd friendos
-git checkout 2ce4a536313fa90887d083d92dcf4f126b87bfe7
+git checkout 816caf63ee02b2226d5c0c3b154ab48d9c694e0d
 npm ci
 npm run dev
 ```
@@ -82,7 +82,7 @@ Node.js 22 or newer is required. Open the printed local URL. Guest mode works im
 
 - Production TypeScript and Vite build passes.
 - ESLint passes.
-- 16 automated Chromium journeys pass across desktop and mobile.
+- 18 automated Chromium journeys pass across desktop and mobile.
 - Tests cover the complete mission flow, operator switching, guest access, wallet controls, skill installation, skill training, structured versioned reviews, routed specialist use, RF allocation receipts, and responsive behavior.
 - Every push to `main` builds, tests, and deploys through GitHub Actions before updating GitHub Pages.
 
