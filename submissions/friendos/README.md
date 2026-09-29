@@ -5,7 +5,7 @@
 **Builder / contact:** [@Dingufira88](https://github.com/Dingufira88)  
 **Category:** Economy Potential  
 **Working demo:** [dingufira88.github.io/friendos](https://dingufira88.github.io/friendos/)  
-**Source:** [FriendOS at submission commit `816caf6`](https://github.com/Dingufira88/friendos/tree/816caf63ee02b2226d5c0c3b154ab48d9c694e0d)
+**Source:** [FriendOS at reviewed commit `8788bab`](https://github.com/Dingufira88/friendos/tree/8788babdf8b3c66c91032248ca96e7646d880245)
 
 ## One sentence
 
@@ -13,7 +13,7 @@ FriendOS turns each Rare Friends Generations NFT into a persistent AI operator t
 
 ## What I built
 
-The Rare Friend is the operator—not a profile picture beside a generic chatbot. Each token ID has its own identity, evolving profile, simulated wallet, spending limits, installed skills, mastery, mission history, receipts, accepted work, and selective memory.
+The Rare Friend is the operator—not a profile picture beside a generic chatbot. Each token ID has its own identity, evolving profile, simulated wallet, spending limits, installed skills, mastery, mission history, receipts, accepted work, selective memory, operating focus, and mission permissions.
 
 The core interaction is complete end to end:
 
@@ -45,7 +45,7 @@ No wallet is required for the full product walkthrough.
 5. Inspect the category-specific result and RF receipt.
 6. Use Mission Review to clarify, challenge, or refine the work. Install the routed specialist or explicitly use native ability when prompted.
 7. Select a result version, choose the memories to retain, and accept it—or start a linked mission.
-8. Open **Agent profile** to inspect the operator's wallet, policy, skills, transactions, progression, and saved memories.
+8. Open **Agent profile** to inspect performance evidence, the five-stage evolution timeline, operating focus, mission permissions, wallet policy, skill impact, transactions, progression, and saved memories.
 9. Open **Skills** to install a marketplace ability for a specific operator or explore the Skill NFT training flow.
 
 For the optional wallet flow, use an injected browser wallet on Robinhood Chain. Connecting requests a free message signature, then reads owned Generations NFTs and the connected wallet's real RF balance. Wallet connection is not required to judge the working interaction.
@@ -71,7 +71,7 @@ Stack: React 19, TypeScript, Vite, FriendSDK v0.1.2, Zustand, Framer Motion, Zod
 ```sh
 git clone https://github.com/Dingufira88/friendos.git
 cd friendos
-git checkout 816caf63ee02b2226d5c0c3b154ab48d9c694e0d
+git checkout 8788babdf8b3c66c91032248ca96e7646d880245
 npm ci
 npm run dev
 ```
@@ -82,13 +82,13 @@ Node.js 22 or newer is required. Open the printed local URL. Guest mode works im
 
 - Production TypeScript and Vite build passes.
 - ESLint passes.
-- 18 automated Chromium journeys pass across desktop and mobile.
-- Tests cover the complete mission flow, operator switching, guest access, wallet controls, skill installation, skill training, structured versioned reviews, routed specialist use, RF allocation receipts, and responsive behavior.
+- 26 automated Chromium journeys pass across desktop and mobile.
+- Tests cover the complete mission flow, operator switching, guest access, wallet controls, skill installation, skill training, structured versioned reviews, routed specialist use, specialist confidence, RF allocation receipts, profile controls, and responsive behavior.
 - Every push to `main` builds, tests, and deploys through GitHub Actions before updating GitHub Pages.
 
 ## Known limitations
 
-- The GitHub Pages build is static, so mission and review reports use deterministic offline output. A serverless mission endpoint is included for deployments configured with an OpenAI API key; live review execution is not enabled.
+- The GitHub Pages build is static, so mission and review reports use deterministic offline output; live review execution is not enabled.
 - Simulated balances, progression, memories, and linked missions are browser-local and do not synchronize across devices.
 - The wallet signature confirms the local session but is not server-authenticated.
 - Skill submission, moderation, public success scoring, live creator payouts, and a public task market are demonstrated product directions rather than active services.
