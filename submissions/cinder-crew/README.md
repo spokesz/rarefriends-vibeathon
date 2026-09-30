@@ -2,7 +2,9 @@
 
 Your hardwired Generations NFT is the smith. The wallet's other Friends are the crew. You spend and burn simulated $RAREFRIENDS at the furnace.
 
-Source: https://github.com/stevereynolds2006-ship-it/cinder-crew
+**Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/
+
+**Source:** https://github.com/stevereynolds2006-ship-it/cinder-crew/tree/f0348d2a61807d8fb846aa0f4973d5aeed8ba509
 
 **Builder:** Steven Reynolds · [GitHub](https://github.com/stevereynolds2006-ship-it) · [@Sharpbigred](https://x.com/Sharpbigred)
 
@@ -76,7 +78,7 @@ FriendSDK v0.1.4 can buy, play, settle, and redeem. It has no burn method. Cinde
 - Friend discovery depends on the public Robinhood RPC. A huge wallet can be slow or fail closed, the same as FriendSDK.
 - Generation 0 Friends are hidden.
 - Practice stand-ins are not NFTs. #7730 and #3412 art is SDK sample artwork, not proof of ownership.
-- The furnace board is stored for this deployment. On a fresh `npm run dev` it starts empty and uses a local database.
+- On the public page the furnace board stays in that browser. `npm run dev` uses a local database and starts empty.
 
 ## Credits
 
