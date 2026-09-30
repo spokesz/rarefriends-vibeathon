@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/8c4b87700561dd1cb7fc88fcbc299131d8ff5639) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/b16a3d268d19d966c9bdd98cbc397b7e90719130) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -37,7 +37,7 @@ Open the printed URL.
 
 ## Playable demo
 
-[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=120](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=120)
+[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=127](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=127)
 
 Open that link in a normal browser or in the MetaMask browser. The game fills the screen. The shore can be walked without a payment. Buying a later board, a cape, or an extra life asks the wallet to send Rare coins.
 
@@ -47,7 +47,7 @@ You still need a wallet holding a hardwired Generations NFT (generation 1 or hig
 
 A and D, or the arrow keys, move. W, up, or space jumps. S drops through a thin plank. E pulls a rope, lights a bell, buys a lantern, or climbs a ladder. On the hoist, Down climbs down. On a phone, the buttons sit above the bottom edge. Mute and reduced motion are in the menu. Sound is on. Each fog has its own music, and a jump plays a hop.
 
-The shore is free and starts with 2 coins picked up in the stage. Two planks appear only while a lantern is lit, and a shrine raises one long plank that falls once you step off. After the gate, four swinging cages lead to the last friend. Every board has a post marked 2. Spend 2 stage coins there and that spot remembers you: a later death keeps the coins you still hold. On the sign, the fire escape stays up until you pay 3 stage coins in the drain. Beat a fog before the next one can be bought. Every board after the shore is 25 Rare coins. A Realistic fog list sits beside the other fogs: the realistic shore is free, and each later realistic look is 10 Rare coins after that fog is beaten. The moon opens October 1, the hallow October 31, the mirror November 1, the tunnel December 1, the eve December 25, and the hoist January 1st. Until then those maps say coming soon and stay locked. Only the shore is open now. At the end of the latch, the cage gives 20 seconds to enter the code. If it is still wrong, acid falls.
+The shore is free and starts with 2 coins picked up in the stage. Two planks appear only while a lantern is lit, and a shrine raises one long plank that falls once you step off. After the gate, four swinging cages lead to the last friend. Every board has a post marked 2. Spend 2 stage coins there and that spot remembers you: a later death keeps the coins you still hold. On the sign, the fire escape stays up until you pay 3 stage coins in the drain. Beat a fog before the next one can be bought. Every board after the shore is 25 Rare coins. The stack is the last fog: cages, wind, saws, ladders, gears, a dark bridge, a boulder, then a lock. Its trees are ash. A Realistic fog list sits beside the other fogs: the realistic shore is free, and each later realistic look is 10 Rare coins after that fog is beaten. The realistic stack uses full trees, earth, and wood. The moon opens October 1, the hallow October 31, the mirror November 1, the tunnel December 1, the eve December 25, and the hoist January 1st. Until then those maps say coming soon and stay locked. The stack stays locked until the hoist is beaten, then it is bought like the others. Only the shore is open now. At the end of the latch, the cage gives 20 seconds to enter the code. If it is still wrong, acid falls.
 
 With friends, open a room code and have the other person join it. Bells, ropes, and coins in a room are shared.
 
