@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/0d3f53d4ca4b58104bd0025ae0dd95c69a5ac775) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/eea2a1b8150ec287a9fbffd41283d3f394894508) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -37,9 +37,9 @@ Open the printed URL.
 
 ## Playable demo
 
-[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=129](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=129)
+[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=135](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=135)
 
-Open that link in a normal browser or in the MetaMask browser. The game fills the screen. The shore can be walked without a payment. Buying a later board, a cape, or an extra life asks the wallet to send Rare coins.
+Open that link in a normal browser or in the MetaMask browser. The game fills the screen. It opens on a loading screen with a wallet connect button, then the title. The shore can be walked without a payment. Buying a later board, a cape, or an extra life asks the wallet to send Rare coins. Get coins back on the title explains the rebate.
 
 You still need a wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -57,6 +57,8 @@ Rare coin spends are real transfers of the Rare token on Robinhood Chain. The fu
 
 - The shore is free. That walk starts with 2 stage coins. Coins picked up in a stage only turn things on inside the stage. They are not Rare coins.
 - Every fog after the shore is 25 Rare coins, and only after the one before it is beaten.
+- Clearing a fog pays the stage coins still in hand, plus 5, up to 12. Those come into the next fog. They are not Rare coins.
+- Beat a paid fog without dying and half the Rare coins just spent come off the next buy. A 25 coin fog returns 12. A 10 coin realistic look returns 5. The coins do not go back to the wallet. Die once and that half is gone. The title has a Get coins back button that says this.
 - A death drops half the stage coins you are carrying and leaves a pile of bones, unless you already paid the mark. Three lives, then one more life is 3 Rare coins.
 - A lantern costs 1 stage coin and lasts 13 seconds on the dark boards. A flashlight costs 5 stage coins. On the moon that buy is a saber. The sign's fire escape costs 3 stage coins. The mark on every board costs 2.
 - The red cape is 15 Rare coins and is open now. Later capes open weekly from October 1. The Halloween cape and the Christmas cape are 25.
