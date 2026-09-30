@@ -7,7 +7,7 @@ Rare Rush is a four-direction runner starring Rare Friends. Jump straight into F
 - **Builder:** XIBOT · [X](https://x.com/xavieriturralde) · [Telegram](https://t.me/xibot0x) · [Email](mailto:xiturralde@gmail.com).
 - **Category:** Economy Potential; also relevant to Character Spotlight.
 - **Source:** [github.com/xibot/rare-rush](https://github.com/xibot/rare-rush).
-- **Stack:** TypeScript, React, SVG, Web Audio and FriendSDK v0.1.2. Testnet adds Solidity contracts and a server-side replay verifier. Generations Arcade uses the SDK wallet/Friend selection; Genesis, Agent Play and community pages use separate hosts and interfaces.
+- **Stack:** TypeScript, React, SVG, Web Audio and FriendSDK v0.1.2. Testnet adds Solidity contracts and a server-side replay verifier. Generations Arcade uses SDK wallet connection with Rare Rush's paged Friend picker; Genesis, Agent Play and community pages use separate hosts and interfaces.
 - **Entry:** [PR #22](https://github.com/spokesz/rarefriends-vibeathon/pull/22), originally submitted September 20, 2026; updated September 29, 2026. Organizer review remains pending.
 
 ## Start here
@@ -49,6 +49,8 @@ Choose a Friend and difficulty. Collect coins, dodge hazards and try to survive 
 
 All three experiences use these run times. The token multipliers apply only to wallet-connected Arcade and Testnet; Free Play has no token rewards. Coins grow the Friend; hits shrink it and cost a heart. Flying bonus coins earn 10× the ordinary coin reward in wallet play, before supply limits. Shields absorb a hit, magnets attract coins, and collection chains boost the score. In wallet play, Genesis adds a 100× token-reward multiplier; token multipliers do not multiply the arcade score. These are skill-based runs with seeded courses and legal inputs, not fixed-probability reward draws.
 
+The **COINS** counter shows physical pickups before reward multipliers. Calculated rewards appear separately as **demo $RARERUSH** in Arcade and **tRARERUSH** on Testnet; Free Play has no token reward.
+
 To play and hear the soundtrack without a wallet, start a [Free Play](https://rarerush.app/free-play/) run. For an automated demonstration, open [Agent Play](https://rarerush.app/agent-play/) and choose AUTOPILOT → PREVIEW. The linked gameplay video, landing preview, saved replays and headless agent jobs remain silent.
 
 ## Costs, rewards and saving
@@ -73,6 +75,8 @@ npm run dev
 ```
 
 Open http://localhost:4173/free-play/ to play without credentials, or http://localhost:4173 for the landing and previews. No secrets are needed to build or use Free Play. `npm run build` produces `dist/`. Public replay APIs need separately configured server storage; `npm run dev` alone does not reproduce the hosted backend. For a local library, use `node agent-play/serve.mjs` and open http://127.0.0.1:4220/.
+
+Local wallet-connected Arcade and browser Autopilot also need the server-side private RPC configuration described in the [README setup](https://github.com/xibot/rare-rush#run-locally). Wallets provide account permissions and requested signatures or transactions; the app's read requests use its configured RPC services.
 
 For a reproducible no-wallet agent demo, run from the same checkout:
 
