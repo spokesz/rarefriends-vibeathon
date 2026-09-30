@@ -27,7 +27,9 @@ Practice yard needs no wallet. It uses FriendSDK sample sprites for tokens #7730
 
 To play your own Friends, open the page in the MetaMask app browser, or in a desktop browser with the MetaMask extension. Tap **Connect MetaMask** and approve Robinhood mainnet (chain 4663). The app reads that wallet's Generations with FriendSDK and draws their canonical sprites. Purchases, redemptions, and burns stay simulated. No RF funding and no spend signature are required.
 
-There is no separate static host. Friend reads and the furnace board run in this Node app, so `npm run dev` is the playable preview.
+**Playable preview:** https://stevereynolds2006-ship-it.github.io/cinder-crew/
+
+Open that page in the MetaMask app browser, or in a desktop browser with the MetaMask extension. Practice yard needs no wallet. Tap **Connect MetaMask** and approve Robinhood mainnet (chain 4663) to use your own Friends. Purchases, redemptions, and burns stay simulated. The furnace board on that public page stays in the browser.
 
 ## Play
 
