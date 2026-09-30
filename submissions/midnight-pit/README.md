@@ -22,7 +22,7 @@ The selected Generations NFT is the pit boss. Its canonical pixels are shown, an
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/midnight-pit](https://github.com/stevereynolds2006-ship-it/midnight-pit/tree/00581783f80ab433f7b5556a260e70ae1a3e423d) · FriendSDK v0.1.4
+[github.com/stevereynolds2006-ship-it/midnight-pit](https://github.com/stevereynolds2006-ship-it/midnight-pit/tree/9b752ef3547c482c30096377cb1eed6f965449f1) · FriendSDK v0.1.4
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet (chain 4663).
 
@@ -78,4 +78,4 @@ The preview ledger resets when the runtime session ends. Wallet connect discover
 
 ## Credits
 
-Chance rules, the preview ledger, sound cues, and Generations pixel decoding are FriendSDK v0.1.4. Asset glyphs are original drawings for this game. See [NOTICE.md](https://github.com/stevereynolds2006-ship-it/midnight-pit/blob/00581783f80ab433f7b5556a260e70ae1a3e423d/NOTICE.md).
+Chance rules, the preview ledger, sound cues, and Generations pixel decoding are FriendSDK v0.1.4. Asset glyphs are original drawings for this game. See [NOTICE.md](https://github.com/stevereynolds2006-ship-it/midnight-pit/blob/9b752ef3547c482c30096377cb1eed6f965449f1/NOTICE.md).
