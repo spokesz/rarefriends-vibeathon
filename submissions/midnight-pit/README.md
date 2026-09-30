@@ -22,7 +22,7 @@ The selected Generations NFT is the pit boss. Its canonical pixels are shown, an
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/midnight-pit](https://github.com/stevereynolds2006-ship-it/midnight-pit/tree/9a1ffeacf44417e2d92ea548b48e15958b4cff06) · FriendSDK v0.1.4
+[github.com/stevereynolds2006-ship-it/midnight-pit](https://github.com/stevereynolds2006-ship-it/midnight-pit/tree/00581783f80ab433f7b5556a260e70ae1a3e423d) · FriendSDK v0.1.4
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet (chain 4663).
 
@@ -41,7 +41,7 @@ Open the printed URL (normally `http://127.0.0.1:4173`). Connect your wallet and
 
 [https://stevereynolds2006-ship-it.github.io/midnight-pit/](https://stevereynolds2006-ship-it.github.io/midnight-pit/)
 
-Open that link in a browser with a wallet, or in your wallet's browser. Balances, items, and outcomes are simulated. Nothing is signed beyond connecting the wallet and choosing a Friend you own.
+Open that link in MetaMask's browser. The pit fills the screen. Balances, items, and outcomes are simulated. Nothing is signed beyond connecting the wallet and choosing a Friend you own.
 
 ## How do you play?
 
@@ -51,7 +51,7 @@ Open that link in a browser with a wallet, or in your wallet's browser. Balances
 4. **Sell to market** to redeem the book value, or **Keep on Friend**. Kept assets do not expire.
 5. Open **Desk** to mute, reduce motion, or turn off shake.
 
-Touch and keyboard both work. Sell from the quote row after you have kept an asset. The stage stays inside the SDK 960 × 640 container.
+Touch and keyboard both work. Sell from the quote row after you have kept an asset. In MetaMask's browser the pit fills the screen, and the market scrolls inside it.
 
 ## Costs and rewards
 
@@ -70,7 +70,7 @@ A purchase reserves the 10 RF maximum until that seal settles. Kept rewards stay
 
 ## What have you tested?
 
-`npx friendsdk check ./games/midnight-pit` passed on FriendSDK v0.1.4: expected reward 0.893 RF, maximum prize 10 RF. `npx friendsdk build` produced the static preview, and the Pages URL loads the wallet gate. A real-wallet playthrough is still outstanding. Desktop and mobile smoke of the earlier development desk covered deploy, reveal, and sell on the simulated book. Those checks are not in this SDK package.
+`npx friendsdk check ./games/midnight-pit` passed on FriendSDK v0.1.4: expected reward 0.893 RF, maximum prize 10 RF. `npx friendsdk build` produced the static preview. On a 390 × 844 phone screen the host frame fills the viewport, and the Pages URL loads the wallet gate. A real-wallet playthrough is still outstanding. Desktop and mobile smoke of the earlier development desk covered deploy, reveal, and sell on the simulated book. Those checks are not in this SDK package.
 
 ## Known limitations
 
@@ -78,4 +78,4 @@ The preview ledger resets when the runtime session ends. Wallet connect discover
 
 ## Credits
 
-Chance rules, the preview ledger, sound cues, and Generations pixel decoding are FriendSDK v0.1.4. Asset glyphs are original drawings for this game. See [NOTICE.md](https://github.com/stevereynolds2006-ship-it/midnight-pit/blob/9a1ffeacf44417e2d92ea548b48e15958b4cff06/NOTICE.md).
+Chance rules, the preview ledger, sound cues, and Generations pixel decoding are FriendSDK v0.1.4. Asset glyphs are original drawings for this game. See [NOTICE.md](https://github.com/stevereynolds2006-ship-it/midnight-pit/blob/00581783f80ab433f7b5556a260e70ae1a3e423d/NOTICE.md).
