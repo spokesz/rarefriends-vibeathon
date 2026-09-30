@@ -61,10 +61,52 @@ Checks: `node estate/checkall.js`. The contracts: `cd estate/contracts && npm i 
 - **Honest note:** the ownership gate on the base page itself is **not yet enforced**. It is planned
   (M23 item 13). Today the base plays without a wallet.
 
-## How to use it
+## How to play
 
-Build a base with your Friends, gather wood and crystals, put up buildings and defences, then attack other
-bases, duel, and trade.
+**Getting in.**
+
+- You need a wallet on Robinhood Chain (chain id 4663).
+- Your Friend is a hardwired Rare Friends Generations NFT: generation 1 or higher.
+- **At launch, only whitelisted addresses can play. Ask the builder to be added.**
+- To play locally today, make `site/` and start the server with the commands under *Source repository*,
+  then open `http://localhost:8765/base.html`. Add `?fresh=1` for an empty plot.
+
+**Your base, and what each tap does.**
+
+| To do this | Do this |
+| --- | --- |
+| Move a Friend | Tap the Friend to select it, then tap open ground. Drag sideways to turn the camera. |
+| Chop wood | With a Friend selected, tap a standing tree. It chops that tree and the rest of the grove. |
+| Cut crystals by hand | With a Friend selected, tap a crystal seam. If it is ripe it pays out and starts to regrow. |
+| Build | Press **BUILD**, pick a structure, then tap open ground you own. On an empty plot the **keep** comes first. |
+| What you can build | Keep, hut, silo, tower, wall, cell, generator and collection depot. A generator needs running water. Some cost wood as well as crystals. |
+| Raise a level | In build mode, tap the building, then **RAISE**. Nothing rises above the keep's level, except a cell. |
+| Harvesters | In build mode, tap the depot, then **BUILD HARVESTER**. It costs crystals, and the depot has one bay per level. |
+| Man a tower, wall or cell | Select a Friend, then tap the tower, the wall or the cell. Tap again to bring them down. |
+| Knock a building down | In build mode, tap it, then **KNOCK DOWN**. Half of everything ever spent on it comes back. The keep goes last. |
+
+- You start with **240.00 crystals** and no wood. Crystals count to two decimal places.
+- The silo caps how many crystals you can hold. A knock-down whose refund would overflow the silo is
+  refused, and the button says how much room it needs.
+
+**A game.**
+
+- A game runs **seven days** to start. The deployer can change that.
+- Joining stays open **24 hours**, then there is an hour before the start. At least two players.
+- The pot is real `$RF`. A cut of **5%** comes off it at launch; the cut is set per game, between 5% and
+  10%, and frozen once the first player has paid.
+- At the end, ranked places share the rest: **first 50%, second 30%, and the last 20% split equally**
+  between the places after that. The deployer sets how many places pay, **at most 10**.
+- **Fights.** Attack another base. **The winner takes everything the loser had.** In V1 our server
+  resolves each fight and commits its hash on chain.
+- **Capture.** Take a building and you have **five minutes** before it is yours. In that time you can
+  sell it or knock it down. The owner can fight you for it inside the base; that fight does not harm the base.
+- **Duels and the four challenge games** - rock paper scissors, blackjack, Texas hold'em (with betting
+  in crystals) and Friend or Fiend (played at a terminal). You stake crystals, never `$RF`. On chain the
+  rolls come from Pyth Entropy; the local page rolls random bytes in its place.
+
+**What is true today.** The game is playable locally. A public preview follows. Fights are decided by
+our server in V1. No contract is on chain yet.
 
 **The economy, labelled.**
 
@@ -96,7 +138,7 @@ See `TOOLKIT.md` for the source of each.
 
 ## Checks and known issues
 
-- **31 checks**, listed with what each does not cover by `node estate/checkall.js --list`.
+- **34 checks**, listed with what each does not cover by `node estate/checkall.js --list`.
 - **Red:** `livecheck` fails on the studio harvester. It is a known, older failure.
 - A green check means what it asserts is true. Most browser checks do not yet watch for failed requests
   or console errors (`estate/pagewatch.js` covers three).
