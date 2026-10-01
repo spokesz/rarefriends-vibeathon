@@ -2,9 +2,9 @@
 
 This Friend is the wallet. Scoop simulated $RAREFRIENDS and burn them as FriendSDK chance capsules to phase through five strata. Ash does not come back.
 
-**Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets-connect/
+**Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets-pay/
 
-**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/8c2e30eb275987f53dd90f3c77de4153be7227c4
+**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/e6ae2068b99b43bf02cc7f338e573740e557b85c
 
 **Builder:** Steven Reynolds · [GitHub](https://github.com/stevereynolds2006-ship-it) · [@Sharpbigred](https://x.com/Sharpbigred)
 
@@ -19,7 +19,7 @@ Node.js 22+.
 ```sh
 git clone https://github.com/stevereynolds2006-ship-it/wallets.git
 cd wallets
-git checkout 8c2e30eb275987f53dd90f3c77de4153be7227c4
+git checkout e6ae2068b99b43bf02cc7f338e573740e557b85c
 npm ci
 npm run dev
 ```
@@ -28,11 +28,11 @@ Open the printed URL (normally `http://127.0.0.1:8080`).
 
 Burns and balances are simulated. Connecting a wallet does not sign a transaction or spend RF. It reads the Generations NFTs that wallet holds and draws that Friend.
 
-**Playable preview:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets-connect/
+**Playable preview:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets-pay/
 
 ## Play
 
-- Connect wallet, under the title, reads the Friends you hold. In the MetaMask browser it prompts that wallet. Anywhere else, the same button opens the MetaMask app. Pick a Friend, then Dive. That NFT's on-chain sprite is the diver.
+- Connect wallet, under the title, reads the Friends you hold. Pick a Friend, then Dive. That NFT is the diver. Each burn asks MetaMask to pay 1 RF from the connected account into that Friend. Prizes are not paid back in RF. The stand-in still uses simulated coins.
 - Start with nothing selected dives as the stand-in, strata 01, RAIN, with 22 simulated RF.
 - Steer with A and D, the arrow keys, the on-screen chevrons, or by dragging. A and the left chevron turn left.
 - W or up boosts. S or down brakes.
