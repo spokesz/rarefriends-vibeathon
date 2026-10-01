@@ -1,0 +1,10 @@
+{
+  "name": "Friend Spotlight: Becoming",
+  "consumable": "Expedition Supply",
+  "price": "1000000000000000000",
+  "outcomes": [
+    { "name": "Frontier Keepsake", "chanceBps": 6000, "reward": "500000000000000000" },
+    { "name": "Vanguard Signal Flare", "chanceBps": 3000, "reward": "1000000000000000000" },
+    { "name": "Ancient Relic Shard", "chanceBps": 1000, "reward": "3000000000000000000" }
+  ]
+}

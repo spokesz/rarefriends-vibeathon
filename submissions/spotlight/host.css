@@ -1,0 +1,11 @@
+:root {
+  --rf-game-max-width: min(1440px, calc(100vw - 24px), calc(176vh - 24px));
+  --rf-game-aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --rf-game-max-width: calc(100vw - 16px);
+    --rf-game-aspect-ratio: 4 / 5;
+  }
+}
