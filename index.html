@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>FRIEND LIFE</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Courier New", monospace;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(123, 255, 110, .18), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(174, 72, 255, .22), transparent 30%),
+    linear-gradient(160deg, #07110d 0%, #101020 48%, #080b12 100%);
+  color: #f4f4ff;
+  display: flex;
+  justify-content: center;
+  padding: 18px 12px 30px;
+}
+
+.game {
+  width: 100%;
+  max-width: 760px;
+}
+
+.header {
+  border: 2px solid #8cff72;
+  border-radius: 18px;
+  padding: 16px;
+  background: rgba(8, 12, 18, .9);
+  box-shadow: 0 0 24px rgba(140, 255, 114, .16);
+  margin-bottom: 14px;
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-size: clamp(24px, 7vw, 42px);
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #aaff8e;
+  text-shadow: 0 0 12px rgba(170, 255, 142, .5);
+}
+
+.tagline {
+  color: #c98cff;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.rf-badge {
+  border: 1px solid #c98cff;
+  color: #dfb8ff;
+  padding: 7px 9px;
+  border-radius: 10px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.room {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  border: 2px solid #9b5cff;
+  border-radius: 24px;
+  background:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(180deg, #17102a 0%, #101827 62%, #07130f 100%);
+  background-size: 24px 24px, 24px 24px, auto;
+  box-shadow:
+    inset 0 0 50px rgba(157, 82, 255, .14),
+    0 0 28px rgba(157, 82, 255, .13);
+}
+
+.moon {
+  position: absolute;
+  top: 28px;
+  right: 32px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #d8c8ff;
+  box-shadow: 0 0 25px rgba(216, 200, 255, .5);
+  opacity: .8;
+}
+
+.palm {
+  position: absolute;
+  bottom: 42px;
+  font-size: 68px;
+  opacity: .7;
+}
+
+.palm.left {
+  left: 8px;
+}
+
+.palm.right {
+  right: 8px;
+  transform: scaleX(-1);
+}
+
+.floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 105px;
+  background: rgba(71, 255, 111, .08);
+  border-top: 2px solid rgba(140, 255, 114, .35);
+}
+
+.friend-zone {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 42px 18px 20px;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.stat {
+  background: rgba(4, 8, 12, .82);
+  border: 1px solid rgba(202, 146, 255, .6);
+  border-radius: 10px;
+  padding: 7px 10px;
+  font-size: 11px;
+}
+
+.friend {
+  width: 145px;
+  height: 145px;
+  margin: 14px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 86px;
+  border-radius: 32px;
+  background: rgba(9, 14, 19, .88);
+  border: 3px solid #9dff78;
+  box-shadow:
+    0 0 18px rgba(157, 255, 120, .35),
+    0 0 55px rgba(161, 82, 255, .2);
+  transition: transform .2s ease, filter .2s ease;
+}
+
+.friend.bounce {
+  animation: bounce .42s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  45% {
+    transform: translateY(-13px) scale(1.08);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.friend-name {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.mood {
+  color: #aaff8e;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.meters {
+  position: relative;
+  z-index: 3;
+  padding: 0 18px 18px;
+}
+
+.meter {
+  margin: 10px 0;
+}
+
+.meter-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.bar {
+  height: 13px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #090d12;
+}
+
+.fill {
+  height: 100%;
+  width: 75%;
+  transition: width .25s ease;
+  background: linear-gradient(90deg, #8cff72, #c98cff);
+}
+
+.controls {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9px;
+}
+
+button {
+  border: 1px solid #9dff78;
+  background: rgba(12, 20, 20, .94);
+  color: white;
+  border-radius: 12px;
+  padding: 13px 7px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  min-height: 48px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+button:active {
+  transform: scale(.95);
+}
+
+button:hover {
+  box-shadow: 0 0 13px rgba(157, 255, 120, .25);
+}
+
+.customize {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid rgba(201, 140, 255, .6);
+  border-radius: 16px;
+  background: rgba(5, 9, 14, .72);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #8060a9;
+  background: #080d13;
+  color: white;
+  font-family: inherit;
+}
+
+.section-title {
+  color: #c98cff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 14px;
+  color: #87908d;
+  font-size: 10px;
+}
+
+.prototype {
+  color: #aaff8e;
+}
+</style>
+</head>
+
+<body>
+
+<main class="game">
+
+  <section class="header">
+    <div class="brand">
+
+      <div>
+        <div class="logo">FRIEND LIFE</div>
+        <div class="tagline">
+          Your Rare Friend. Your home. Your story.
+        </div>
+      </div>
+
+      <div class="rf-badge">
+        RARE FRIENDS<br>
+        PROTOTYPE
+      </div>
+
+    </div>
+  </section>
+
+  <section class="room">
+
+    <div class="moon"></div>
+
+    <div class="palm left">🌴</div>
+    <div class="palm right">🌴</div>
+
+    <div class="floor"></div>
+
+    <div class="friend-zone">
+
+      <div class="status">
+
+        <div class="stat">
+          ⭐ LEVEL <span id="level">01</span>
+        </div>
+
+        <div class="stat">
+          🪙 $RF <span id="rf">500</span>
+        </div>
+
+        <div class="stat">
+          🎨 <span id="vibeLabel">NEON</span>
+        </div>
+
+      </div>
+
+      <div id="friend" class="friend">
+        👾
+      </div>
+
+      <div class="friend-name" id="friendName">
+        MY FRIEND
+      </div>
+
+      <div class="mood" id="mood">
+        Ready to hang out 🌴
+      </div>
+
+    </div>
+
+    <div class="meters">
+
+      <div class="meter">
+
+        <div class="meter-label">
+          <span>❤️ HAPPINESS</span>
+          <span id="happyText">80%</span>
+        </div>
+
+        <div class="bar">
+          <div
+            id="happyBar"
+            class="fill"
+            style="width:80%">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="meter">
+
+        <div class="meter-label">
+          <span>⚡ ENERGY</span>
+          <span id="energyText">80%</span>
+        </div>
+
+        <div class="bar">
+          <div
+            id="energyBar"
+            class="fill"
+            style="width:80%">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="controls">
+
+        <button onclick="action('pet')">
+          🐾 PET
+        </button>
+
+        <button onclick="action('feed')">
+          🍖 FEED
+        </button>
+
+        <button onclick="action('wash')">
+          🛁 WASH
+        </button>
+
+        <button onclick="action('play')">
+          🎮 PLAY
+        </button>
+
+      </div>
+
+      <div class="customize">
+
+        <div class="section-title">
+          ✏️ PERSONALIZE YOUR FRIEND
+        </div>
+
+        <input
+          id="nameInput"
+          placeholder="Enter Friend name"
+        >
+
+        <select id="vibeSelect">
+
+          <option value="NEON">
+            🟢 NEON
+          </option>
+
+          <option value="ISLAND">
+            🌴 ISLAND
+          </option>
+
+          <option value="COSMIC">
+            🌌 COSMIC
+          </option>
+
+          <option value="SHADOW">
+            🌑 SHADOW
+          </option>
+
+        </select>
+
+        <button onclick="customizeFriend()">
+          SAVE STYLE
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="footer">
+
+    FRIEND LIFE • Rare Friends ecosystem prototype
+
+    <br>
+
+    <span class="prototype">
+      Prototype features are not connected to live contracts.
+    </span>
+
+  </div>
+
+</main>
+
+<script>
+
+let happiness = 80;
+let energy = 80;
+let level = 1;
+let rf = 500;
+
+const friend = document.getElementById("friend");
+const mood = document.getElementById("mood");
+
+function updateUI() {
+
+  happiness = Math.max(
+    0,
+    Math.min(100, happiness)
+  );
+
+  energy = Math.max(
+    0,
+    Math.min(100, energy)
+  );
+
+  document.getElementById("happyBar")
+    .style.width = happiness + "%";
+
+  document.getElementById("energyBar")
+    .style.width = energy + "%";
+
+  document.getElementById("happyText")
+    .textContent = happiness + "%";
+
+  document.getElementById("energyText")
+    .textContent = energy + "%";
+
+  document.getElementById("level")
+    .textContent = String(level).padStart(2, "0");
+
+  document.getElementById("rf")
+    .textContent = rf;
+}
+
+function action(type) {
+
+  friend.classList.remove("bounce");
+
+  void friend.offsetWidth;
+
+  friend.classList.add("bounce");
+
+  if (type === "pet") {
+
+    happiness += 8;
+
+    mood.textContent =
+      "Feeling loved ❤️";
+  }
+
+  if (type === "feed") {
+
+    happiness += 5;
+    energy += 10;
+
+    mood.textContent =
+      "Yum! 🍖";
+  }
+
+  if (type === "wash") {
+
+    happiness += 4;
+
+    mood.textContent =
+      "Fresh and clean! 🛁✨";
+  }
+
+  if (type === "play") {
+
+    happiness += 12;
+    energy -= 15;
+    level += 1;
+
+    mood.textContent =
+      "That was fun! 🎮🔥";
+  }
+
+  updateUI();
+}
+
+function customizeFriend() {
+
+  const name =
+    document.getElementById("nameInput")
+    .value
+    .trim();
+
+  const vibe =
+    document.getElementById("vibeSelect")
+    .value;
+
+  if (name) {
+
+    document.getElementById("friendName")
+      .textContent =
+      name.toUpperCase();
+  }
+
+  document.getElementById("vibeLabel")
+    .textContent = vibe;
+
+  const vibeMessages = {
+
+    NEON:
+      "Neon mode activated 🟢🟣",
+
+    ISLAND:
+      "Island vibes activated 🌴",
+
+    COSMIC:
+      "Cosmic mode activated 🌌",
+
+    SHADOW:
+      "Shadow mode activated 🌑"
+
+  };
+
+  mood.textContent =
+    vibeMessages[vibe];
+}
+
+updateUI();
+
+</script>
+
+</body>
+</html>
