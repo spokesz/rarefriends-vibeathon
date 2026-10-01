@@ -85,9 +85,14 @@ Checks: `node estate/checkall.js`. The contracts: `cd estate/contracts && npm i 
 | Man a tower, wall or cell | Select a Friend, then tap the tower, the wall or the cell. Tap again to bring them down. |
 | Knock a building down | In build mode, tap it, then **KNOCK DOWN**. Half of everything ever spent on it comes back. |
 
-- **Your keep.** You can knock down your own keep. Your other buildings then become ruins that nobody
-  controls. If an opponent destroys your keep, you can still use what you have, but you cannot upgrade it.
-  **This is the rule. The local build still refuses to knock down a keep while other buildings stand.**
+- **Your keep.** You can knock down your own keep. If you do, or if an opponent destroys it, you keep
+  using every building you have, but you cannot upgrade anything. You can build the keep again for
+  75 wood and 75 crystals. It comes back at level 1, on free ground of your own. Until it is finished,
+  you cannot upgrade or place anything. After that, nothing can rise above the keep's level, so raise
+  the keep first. Your first keep is free. With no keep and nowhere to store crystals, you can still
+  gather up to 75 crystals, enough to rebuild.
+  **This is the rule. The local build does not do it yet.** Today it still refuses to knock down a keep
+  while other buildings stand.
 - You start with **240.00 crystals** and no wood. Crystals count to two decimal places.
 - The silo caps how many crystals you can hold. A knock-down whose refund would overflow the silo is
   refused, and the button says how much room it needs.
@@ -104,10 +109,17 @@ Checks: `node estate/checkall.js`. The contracts: `cd estate/contracts && npm i 
   10%, and frozen once the first player has paid.
 - At the end, ranked places share the rest: **first 50%, second 30%, and the last 20% split equally**
   between the places after that. The deployer sets how many places pay, **at most 10**.
-- **Fights.** Attack another base. **The winner takes everything the loser had.** In V1 our server
-  resolves each fight and commits its hash on chain.
-- **Capture.** Take a building and you have **five minutes** before it is yours. In that time you can
-  sell it or knock it down. The owner can fight you for it inside the base; that fight does not harm the base.
+- **Fights.** Attack another base. In V1 our server resolves each fight and commits its hash on chain.
+  Winning takes nothing from the loser by itself. A building you destroy is just destroyed: it
+  weakens the defence and gives you nothing. A Friend beaten in an attack is out until the next game.
+- You can send as many Friends as you own, and a fight holds every wall the defender has. A destroyed
+  silo spills the crystals the base can no longer hold onto the ground around it, and anyone can mine
+  them there. **This is the rule. The local build does not do it yet.**
+- **Capture.** Capturing a building is the only way to take another player's resources. A building
+  you capture is yours for good. You can sell it, or build next to it to push into that base. The
+  risk is yours: the owner can fight you while you take it, and if you are killed, it stays theirs.
+  That fight does not harm the base.
+  **This is the rule. The local build does not do it yet.**
 - **Duels and the four challenge games** - rock paper scissors, blackjack, Texas hold'em (with betting
   in crystals) and Friend or Fiend (played at a terminal). You stake crystals, never `$RF`. On chain the
   rolls come from Pyth Entropy; the local page rolls random bytes in its place.
