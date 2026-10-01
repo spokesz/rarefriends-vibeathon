@@ -1,0 +1,7 @@
+/* Portrait phones: give the game a tall frame instead of a short 3:2 strip. */
+@media (orientation: portrait) and (max-width: 600px) {
+  :root { --rf-game-max-width: 600px; --rf-game-aspect-ratio: 3 / 4; }
+}
+@media (orientation: portrait) and (max-width: 600px) and (max-aspect-ratio: 10 / 16) {
+  :root { --rf-game-aspect-ratio: 2 / 3; }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Lantern Night",
+  "consumable": "Lantern",
+  "price": "1000000000000000000",
+  "outcomes": [
+    { "name": "Paper Star", "chanceBps": 5500, "reward": "400000000000000000" },
+    { "name": "Moon Charm", "chanceBps": 3000, "reward": "1000000000000000000" },
+    { "name": "Comet", "chanceBps": 1200, "reward": "2000000000000000000" },
+    { "name": "Golden Lantern", "chanceBps": 300, "reward": "3000000000000000000" }
+  ]
+}
