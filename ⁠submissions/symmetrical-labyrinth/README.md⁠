@@ -1,0 +1,25 @@
+# Rare Friends: Symmetrical Hedge Labyrinth
+### Project Details
+- **Project Name:** Symmetrical Hedge Labyrinth
+- **Builder / Contact:** [Your Name / Discord Handle / Twitter Handle]
+- **Category:** Token Activity / Character Spotlight
+### Overview
+A symmetrical 4-way hedge maze mini-game built with FriendSDK v0.1 where players navigate their Rare Friend character to collect gem shards and reach the labyrinth goal to earn $RAREFRIENDS tokens.
+### Links
+- **Source Code Repository:** `https://github.com/your-username/rarefriends-maze`
+- **Playable Live Preview:** `https://your-username.github.io/rarefriends-maze/`
+- **SDK Version:** FriendSDK v0.1 (simulated integration included)
+### Game Controls & Rules
+- **Controls:**
+ - **Desktop:** WASD / Arrow Keys, or click/tap adjacent tiles directly.
+ - **Mobile:** On-screen Virtual D-Pad / Touch controls.
+- **Rules:**
+ - Navigate from the maze start to the glowing goal point.
+ - Optional: Pick up Gem Shards (+10 $RAREFRIENDS bonus).
+ - Reaching the goal triggers a victory state and awards **100 $RAREFRIENDS**.
+ - Click "Next Level" to generate a larger, symmetrical procedural maze with fresh rewards.
+### Technical & Compatibility Checks
+- **SDK Integration:** Built within the 960 × 640 target resolution bounds.
+- **Accessibility:** Touch, keyboard, audio mute toggle, and high-contrast tile layout supported.
+- **Simulated Contracts:** Token minting and wallet authorization are fully simulated in accordance with MVP submission guidelines.
+- **Known Issues:** None. Runs entirely in standard modern web browsers via pure standard HTML5 Canvas & Web Audio API without external npm build steps.
