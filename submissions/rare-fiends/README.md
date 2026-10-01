@@ -16,7 +16,7 @@ Rare Fiends is an on-chain strategy game on Robinhood Chain (4663) where players
 ## Source repository
 
 - Repository: `https://github.com/metanodelabs/rare-fiends`.
-- The game lives in `estate/`. The design, which is the source of truth, is `estate/DESIGN.md`.
+- The game lives in `estate/`, the contracts in `estate/contracts/`, the toolkit record in `TOOLKIT.md`, and this submission in `submissions/`.
 
 **Stack.** Rare Fiends is **not built inside FriendSDK**. It uses FriendSDK **v0.1.2** (pinned, see
 `TOOLKIT.md`) for two things only: the Friend sprite renderer (`frames()`) and the tree prop. The SDK is
@@ -155,4 +155,4 @@ See `TOOLKIT.md` for the source of each.
 
 ## AI-assisted
 
-Yes. Built with Claude Code and a set of role agents, one file per role in `.claude/agents/`.
+Yes. Built with Claude Code and a set of role agents, one file per role (kept in the private archive, not in this repository).
