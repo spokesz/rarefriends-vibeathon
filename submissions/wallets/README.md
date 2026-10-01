@@ -4,7 +4,7 @@ This Friend is the wallet. Scoop simulated $RAREFRIENDS and burn them as FriendS
 
 **Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
-**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/456c443ba35d266c36c9081ffc59c2edf4d9afa3
+**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/3f24a8e053c39ea266c7347880cd00d97c16f380
 
 **Builder:** Steven Reynolds · [GitHub](https://github.com/stevereynolds2006-ship-it) · [@Sharpbigred](https://x.com/Sharpbigred)
 
@@ -19,20 +19,20 @@ Node.js 22+.
 ```sh
 git clone https://github.com/stevereynolds2006-ship-it/wallets.git
 cd wallets
-git checkout 456c443ba35d266c36c9081ffc59c2edf4d9afa3
+git checkout 3f24a8e053c39ea266c7347880cd00d97c16f380
 npm ci
 npm run dev
 ```
 
 Open the printed URL (normally `http://127.0.0.1:8080`).
 
-Burns during play stay simulated. Connect a wallet, pick a Friend, and dive. MetaMask sends 25 RF to `0xb7823b2e28484382aa70952a7818712e8ac42a72` before the run starts. Beat the dive and half, 12.5 RF, is the return from that address. A failed dive keeps the 25. This page cannot sign that return. The stand-in never sends RF.
+Burns during play stay simulated. Connect a wallet, pick a Friend, and dive. MetaMask sends 25 RF into that Friend's token-bound wallet before the run starts. The coins stay there. A clear run does not send more. The stand-in never sends RF.
 
 **Playable preview:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
 ## Play
 
-- Connect wallet, under the title, reads the Friends you hold. Pick a Friend, then Dive. That NFT is the diver. Dive asks once for 25 RF to `0xb7823b2e28484382aa70952a7818712e8ac42a72` before play. Beat the dive and half, 12.5 RF, is owed back from that address. A failed dive keeps the 25. Burns during play do not open the wallet. Disconnect wallet forgets the Friend on this page. The stand-in still uses simulated coins.
+- Connect wallet, under the title, reads the Friends you hold. Pick a Friend, then Dive. That NFT is the diver. Dive asks once for 25 RF into that Friend's token-bound wallet before play. The coins stay there. Burns during play do not open the wallet. Disconnect wallet forgets the Friend on this page. The stand-in still uses simulated coins.
 - Start with nothing selected dives as the stand-in, strata 01, RAIN, with 22 simulated RF.
 - Steer with A and D, the arrow keys, the on-screen chevrons, or by dragging. A and the left chevron turn left.
 - W or up boosts. S or down brakes.
@@ -54,13 +54,13 @@ Burns during play stay simulated. Connect a wallet, pick a Friend, and dive. Met
 
 Strata burn quotas: RAIN 6, GRID 10, WAVE 14, TESSERACT 18, GARGANTUA 24.
 
-FriendSDK v0.1.4 settles each capsule on a preview ledger with a shadow balance so the client can buy, play, settle, and redeem. The number on screen is the 22 RF stipend plus scooped coins, not that shadow balance. Those capsules never move RF. A connected dive is separate: 25 RF goes to `0xb7823b2e28484382aa70952a7818712e8ac42a72` before play. Clearing it is owed 12.5 RF back from that address.
+FriendSDK v0.1.4 settles each capsule on a preview ledger with a shadow balance so the client can buy, play, settle, and redeem. The number on screen is the 22 RF stipend plus scooped coins, not that shadow balance. Those capsules never move RF. A connected dive is separate: 25 RF goes to that Friend's token-bound wallet before play.
 
 ## Checks and known limits
 
 `node --experimental-strip-types --test src/game/sim.test.ts` — 6 tests, all passing (Ash sink, Drip redeem, empty-wallet refusal, A turns left, seal stays shut until the quota, strata 01 cracks after the quota). `npm run pages` builds the static preview.
 
-- A connected dive sends 25 RF to `0xb7823b2e28484382aa70952a7818712e8ac42a72` before play. A clear run is owed 12.5 RF back from that address. This page cannot send that return. A failed dive keeps the 25. The stand-in never sends RF.
+- A connected dive sends 25 RF to that Friend's token-bound wallet before play. It stays there. The stand-in never sends RF.
 - Connect reads ownership and the canonical Generations bitmap. Burns during play stay simulated.
 - Without a wallet, the diver is original art.
 - The stage fills the visible screen, including the MetaMask browser's fullscreen control.
