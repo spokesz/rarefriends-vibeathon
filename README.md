@@ -4,6 +4,59 @@
 
 1 prompt. 1 Rare Friend. Build something interesting for Rare Friends: a minigame, virtual pet, idle game, gacha, launchpad, tool, agent, or something new. AI-assisted builds are welcome. One working core interaction is enough.
 
+## Vibeathon winners
+
+**Congratulations to all 30 winning submissions!** [Meet the winners and play the top three entries in each category](https://164-92-137-78.sslip.io/winners/).
+
+**Contact:** [@poopie on X](https://x.com/poopie) for questions and prize coordination.
+
+### Character Spotlight
+
+| Place | Project | Winner | Prize | Contact |
+|---|---|---|---|---|
+| 1 | [Rare Breeds (#81)](https://github.com/spokesz/rarefriends-vibeathon/pull/81) | [@JLSJZN](https://github.com/JLSJZN) | $1,000 + 1 Genesis NFT | [X: JLSJZN](https://x.com/JLSJZN) · [Telegram: JLSJZN](https://t.me/JLSJZN) |
+| 2 | [Friend Studio (#67)](https://github.com/spokesz/rarefriends-vibeathon/pull/67) | [@uphoricdesign](https://github.com/uphoricdesign) | $500 + 10 Gen-1 NFTs | [X: u_phoric](https://x.com/u_phoric) |
+| 3 | [Rare Friends: Friend Nook (#53)](https://github.com/spokesz/rarefriends-vibeathon/pull/53) | [@DEDQ3E](https://github.com/DEDQ3E) | $250 + 9 Gen-1 NFTs | Discord: dedq3e3 · [Telegram: DEDQ3E](https://t.me/DEDQ3E) |
+| 4 | [Rare Friends: The Descent (#89)](https://github.com/spokesz/rarefriends-vibeathon/pull/89) | [@M4S4T0-V01D](https://github.com/M4S4T0-V01D) | $100 + 8 Gen-1 NFTs | [X: M4S4T0_V01D](https://x.com/M4S4T0_V01D) |
+| 5 | [Rare Heist (#111)](https://github.com/spokesz/rarefriends-vibeathon/pull/111) | [@warninghejo-blip](https://github.com/warninghejo-blip) | $50 + 7 Gen-1 NFTs | Contact via GitHub |
+| 6 | [Shadow Friends (#87)](https://github.com/spokesz/rarefriends-vibeathon/pull/87) | [@akt-papa](https://github.com/akt-papa) | $25 + 6 Gen-1 NFTs | [X: aktpapa](https://x.com/aktpapa) · [Website: 0n1japan.aktpapa.com](https://0n1japan.aktpapa.com/) |
+| 7 | [Friend Planets (#138)](https://github.com/spokesz/rarefriends-vibeathon/pull/138) | [@bbczzzs](https://github.com/bbczzzs) | $10 + 5 Gen-1 NFTs | Contact via GitHub |
+| 8 | [Stay Rare (#72)](https://github.com/spokesz/rarefriends-vibeathon/pull/72) | [@afurourrego](https://github.com/afurourrego) | $10 + 4 Gen-1 NFTs | [X: afurourrego](https://x.com/afurourrego) · [infoafuro@gmail.com](mailto:infoafuro@gmail.com) · [Website: afuro.com.co](https://afuro.com.co) |
+| 9 | [Rare Friends: The Hatch (#140)](https://github.com/spokesz/rarefriends-vibeathon/pull/140) | [@potatolover-69](https://github.com/potatolover-69) | $10 + 3 Gen-1 NFTs | [jamiecrypto0000@gmail.com](mailto:jamiecrypto0000@gmail.com) |
+| 10 | [Friends Publishing House (#118)](https://github.com/spokesz/rarefriends-vibeathon/pull/118) | [@huntclubhero](https://github.com/huntclubhero) | $10 + 2 Gen-1 NFTs | [X: huntclubhero](https://x.com/huntclubhero) · ENS: huntclubhero.eth |
+
+### Token Activity
+
+| Place | Project | Winner | Prize | Contact |
+|---|---|---|---|---|
+| 1 | [Rare Royale (#63)](https://github.com/spokesz/rarefriends-vibeathon/pull/63) | [@DEDQ3E](https://github.com/DEDQ3E) | $1,000 + 1 Genesis NFT | Discord: dedq3e3 · [Telegram: DEDQ3E](https://t.me/DEDQ3E) |
+| 2 | [Rare Arcade (#122)](https://github.com/spokesz/rarefriends-vibeathon/pull/122) | [@buildinginweb3](https://github.com/buildinginweb3) | $500 + 10 Gen-1 NFTs | [X: buildinginweb3](https://x.com/buildinginweb3) |
+| 3 | [Moonshot (#95)](https://github.com/spokesz/rarefriends-vibeathon/pull/95) | [@bbczzzs](https://github.com/bbczzzs) | $250 + 9 Gen-1 NFTs | Contact via GitHub |
+| 4 | [Penalty Kings (#97)](https://github.com/spokesz/rarefriends-vibeathon/pull/97) | [@tulipoaaaaa](https://github.com/tulipoaaaaa) | $100 + 8 Gen-1 NFTs | Other: @phon_ro (platform not specified) |
+| 5 | [Throne & Flame (#74)](https://github.com/spokesz/rarefriends-vibeathon/pull/74) | [@afurourrego](https://github.com/afurourrego) | $50 + 7 Gen-1 NFTs | [X: afurourrego](https://x.com/afurourrego) · [infoafuro@gmail.com](mailto:infoafuro@gmail.com) · [Website: afuro.com.co](https://afuro.com.co) |
+| 6 | [RareFriends Cafe (#88)](https://github.com/spokesz/rarefriends-vibeathon/pull/88) | [@M4S4T0-V01D](https://github.com/M4S4T0-V01D) | $25 + 6 Gen-1 NFTs | [X: M4S4T0_V01D](https://x.com/M4S4T0_V01D) |
+| 7 | [Friend Forge (#93)](https://github.com/spokesz/rarefriends-vibeathon/pull/93) | [@RomaMartynyuk](https://github.com/RomaMartynyuk) | $10 + 5 Gen-1 NFTs | Contact via GitHub |
+| 8 | [Friendpad (#80)](https://github.com/spokesz/rarefriends-vibeathon/pull/80) | [@AlbertGit360](https://github.com/AlbertGit360) | $10 + 4 Gen-1 NFTs | [Telegram: albertos360](https://t.me/albertos360) · [X: AlbertErgart](https://x.com/AlbertErgart) |
+| 9 | [Loose Pixels (#142)](https://github.com/spokesz/rarefriends-vibeathon/pull/142) | [@floflo777](https://github.com/floflo777) | $10 + 3 Gen-1 NFTs | Contact via GitHub |
+| 10 | [Rare City (#149)](https://github.com/spokesz/rarefriends-vibeathon/pull/149) | [@420JB](https://github.com/420JB) | $10 + 2 Gen-1 NFTs | [X: CallOfTheStars](https://x.com/CallOfTheStars) |
+
+### Economy Potential
+
+| Place | Project | Winner | Prize | Contact |
+|---|---|---|---|---|
+| 1 | [RareFriends Realm (#101)](https://github.com/spokesz/rarefriends-vibeathon/pull/101) | [@M4S4T0-V01D](https://github.com/M4S4T0-V01D) | $1,000 + 1 Genesis NFT | [X: M4S4T0_V01D](https://x.com/M4S4T0_V01D) |
+| 2 | [BITROT (#114)](https://github.com/spokesz/rarefriends-vibeathon/pull/114) | [@kamideathless](https://github.com/kamideathless) | $500 + 10 Gen-1 NFTs | [X: kamiyahame](https://x.com/kamiyahame) |
+| 3 | [Rare Bonds (#135)](https://github.com/spokesz/rarefriends-vibeathon/pull/135) | [@AlbertGit360](https://github.com/AlbertGit360) | $250 + 9 Gen-1 NFTs | [Telegram: albertos360](https://t.me/albertos360) · [X: AlbertErgart](https://x.com/AlbertErgart) |
+| 4 | [Rare Friends: Expeditions (#47)](https://github.com/spokesz/rarefriends-vibeathon/pull/47) | [@DEDQ3E](https://github.com/DEDQ3E) | $100 + 8 Gen-1 NFTs | Discord: dedq3e3 · [Telegram: DEDQ3E](https://t.me/DEDQ3E) |
+| 5 | [Rare Advance (#145)](https://github.com/spokesz/rarefriends-vibeathon/pull/145) | [@buildinginweb3](https://github.com/buildinginweb3) | $50 + 7 Gen-1 NFTs | [X: buildinginweb3](https://x.com/buildinginweb3) |
+| 6 | [NEMO FRNS FARM (#50)](https://github.com/spokesz/rarefriends-vibeathon/pull/50) | [@shukla1243](https://github.com/shukla1243) | $25 + 6 Gen-1 NFTs | [X: mutantonchain](https://x.com/mutantonchain) |
+| 7 | [RareWords (#128)](https://github.com/spokesz/rarefriends-vibeathon/pull/128) | [@AlanFalcon](https://github.com/AlanFalcon) | $10 + 5 Gen-1 NFTs | Contact via GitHub |
+| 8 | [Alien Angler (#73)](https://github.com/spokesz/rarefriends-vibeathon/pull/73) | [@Sugoi8130](https://github.com/Sugoi8130) | $10 + 4 Gen-1 NFTs | Contact via GitHub |
+| 9 | [Friend Foundry (#121)](https://github.com/spokesz/rarefriends-vibeathon/pull/121) | [@plus8bit](https://github.com/plus8bit) | $10 + 3 Gen-1 NFTs | [GitHub issues: github.com](https://github.com/plus8bit/friend-foundry/issues) |
+| 10 | [Dragon Stakes (#136)](https://github.com/spokesz/rarefriends-vibeathon/pull/136) | [@tmuchal](https://github.com/tmuchal) | $10 + 2 Gen-1 NFTs | [X: tm_uchal](https://x.com/tm_uchal) |
+
+Qualified, judged entrants who did not win receive **1 Gen-1 NFT** for participating.
+
 ## Choose your approach
 
 ### Games using FriendSDK
@@ -47,4 +100,4 @@ Need help choosing an approach or submitting? Join [Vibeathon support on Telegra
 | Token Activity | Most successful at burning or spending $RAREFRIENDS | $1,000 + 1 Genesis NFT | $500 + 10 Gen-1 NFTs | $250 + 9 Gen-1 NFTs |
 | Economy Potential | Best potential for a token economy paired with $RAREFRIENDS | $1,000 + 1 Genesis NFT | $500 + 10 Gen-1 NFTs | $250 + 9 Gen-1 NFTs |
 
-**Details pending:** seven additional paid spots are advertised alongside the $40,000 total pool. Remaining payouts, NFT valuations and how simulated entries are judged for Token Activity are TBA.
+**Additional prizes in each category:** 4th: $100 + 8 Gen-1 NFTs; 5th: $50 + 7 Gen-1 NFTs; 6th: $25 + 6 Gen-1 NFTs; 7th: $10 + 5 Gen-1 NFTs; 8th: $10 + 4 Gen-1 NFTs; 9th: $10 + 3 Gen-1 NFTs; 10th: $10 + 2 Gen-1 NFTs.
