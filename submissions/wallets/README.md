@@ -4,7 +4,7 @@ This Friend is the wallet. Scoop simulated $RAREFRIENDS and burn them as FriendS
 
 **Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
-**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/12990b2fefe7023af7520f229d58525badb8191a
+**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/18795dec87e1c02849c32e4f618f9a775cef1eee
 
 **Builder:** Steven Reynolds · [GitHub](https://github.com/stevereynolds2006-ship-it) · [@Sharpbigred](https://x.com/Sharpbigred)
 
@@ -19,7 +19,7 @@ Node.js 22+.
 ```sh
 git clone https://github.com/stevereynolds2006-ship-it/wallets.git
 cd wallets
-git checkout 12990b2fefe7023af7520f229d58525badb8191a
+git checkout 18795dec87e1c02849c32e4f618f9a775cef1eee
 npm ci
 npm run dev
 ```
