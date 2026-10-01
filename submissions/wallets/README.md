@@ -1,10 +1,18 @@
 # WALLETS
 
-This Friend is the wallet. Scoop simulated $RAREFRIENDS and burn them as FriendSDK chance capsules to phase through five strata. Ash does not come back.
+Fly through five levels as your Rare Friend. A connected run spends 25 $RAREFRIENDS into that NFT's own wallet before the dive can start. Coins you burn during the run are simulated.
+
+## What you do
+
+1. Connect your wallet and pick a Friend you own. That NFT is you on screen.
+2. Pay 25 RF. It goes into that Friend's own wallet and stays there. The dive does not start until the payment confirms.
+3. Steer and dodge. Pick up coins. Spend 1 simulated coin to phase so hazards pass through you.
+4. Burn that level's quota to open the next one. There are five levels. Three hits ends the run.
+5. Don't want to pay? Choose Stand-in. That run is free and the coins are pretend.
 
 **Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
-**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/c3c208f5cfb4402dcd1ea2dd18649beb13749b6d
+**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/4a31e7a79aa0dfeeb7b0c318f33dc8e382579e58
 
 **Builder:** Steven Reynolds · [GitHub](https://github.com/stevereynolds2006-ship-it) · [@Sharpbigred](https://x.com/Sharpbigred)
 
@@ -19,7 +27,7 @@ Node.js 22+.
 ```sh
 git clone https://github.com/stevereynolds2006-ship-it/wallets.git
 cd wallets
-git checkout c3c208f5cfb4402dcd1ea2dd18649beb13749b6d
+git checkout 4a31e7a79aa0dfeeb7b0c318f33dc8e382579e58
 npm ci
 npm run dev
 ```
