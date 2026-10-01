@@ -22,7 +22,7 @@ You play as your own Generations NFT, using its original character artwork. Conn
 
 ## Source code
 
-[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/eea2a1b8150ec287a9fbffd41283d3f394894508) · FriendSDK v0.1.2
+[github.com/stevereynolds2006-ship-it/ashwalk](https://github.com/stevereynolds2006-ship-it/ashwalk/tree/ba6cee56b014a2c6e9561256cfce3bfff2449fb4) · FriendSDK v0.1.2
 
 Node.js 22+. A browser wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
@@ -37,9 +37,9 @@ Open the printed URL.
 
 ## Playable demo
 
-[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=135](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=135)
+[https://stevereynolds2006-ship-it.github.io/ashwalk/?v=137](https://stevereynolds2006-ship-it.github.io/ashwalk/?v=137)
 
-Open that link in a normal browser or in the MetaMask browser. The game fills the screen. It opens on a loading screen with a wallet connect button, then the title. The shore can be walked without a payment. Buying a later board, a cape, or an extra life asks the wallet to send Rare coins. Get coins back on the title explains the rebate.
+Open that link in a normal browser or in the MetaMask browser. The game fills the screen. Connect the wallet on the FriendSDK screen and choose a Friend you own. Then the game opens. The shore can be walked without a payment. Buying a later board, a cape, or an extra life asks the wallet to send Rare coins. Get coins back on the title explains the rebate.
 
 You still need a wallet holding a hardwired Generations NFT (generation 1 or higher) on Robinhood mainnet.
 
