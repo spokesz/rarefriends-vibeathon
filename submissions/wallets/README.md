@@ -4,7 +4,7 @@ This Friend is the wallet. Scoop simulated $RAREFRIENDS and burn them as FriendS
 
 **Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
-**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/47aed95f3a92781fd8c33f79a85eec49f5899887
+**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/18f4e07a57dc94e5574e15d8b4d502fb3a003105
 
 **Builder:** Steven Reynolds · [GitHub](https://github.com/stevereynolds2006-ship-it) · [@Sharpbigred](https://x.com/Sharpbigred)
 
@@ -19,7 +19,7 @@ Node.js 22+.
 ```sh
 git clone https://github.com/stevereynolds2006-ship-it/wallets.git
 cd wallets
-git checkout 47aed95f3a92781fd8c33f79a85eec49f5899887
+git checkout 18f4e07a57dc94e5574e15d8b4d502fb3a003105
 npm ci
 npm run dev
 ```
@@ -32,7 +32,7 @@ Burns and balances are simulated. Connecting a wallet does not sign a transactio
 
 ## Play
 
-- Connect wallet, under the title, reads the Friends you hold. Pick a Friend, then Dive. That NFT is the diver. Dive asks MetaMask once for 10 RF from the connected account into that Friend. Burns during play do not open the wallet. Prizes are not paid back in RF. The stand-in still uses simulated coins.
+- Connect wallet, under the title, reads the Friends you hold. Pick a Friend, then Dive. That NFT is the diver. Dive asks MetaMask once for 10 RF from the connected account into that Friend. Burns during play do not open the wallet. Disconnect wallet forgets the Friend on this page and does not spend RF. Prizes are not paid back in RF. The stand-in still uses simulated coins.
 - Start with nothing selected dives as the stand-in, strata 01, RAIN, with 22 simulated RF.
 - Steer with A and D, the arrow keys, the on-screen chevrons, or by dragging. A and the left chevron turn left.
 - W or up boosts. S or down brakes.
