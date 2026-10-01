@@ -4,7 +4,7 @@ This Friend is the wallet. Scoop simulated $RAREFRIENDS and burn them as FriendS
 
 **Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
-**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/3f24a8e053c39ea266c7347880cd00d97c16f380
+**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/c3c208f5cfb4402dcd1ea2dd18649beb13749b6d
 
 **Builder:** Steven Reynolds · [GitHub](https://github.com/stevereynolds2006-ship-it) · [@Sharpbigred](https://x.com/Sharpbigred)
 
@@ -19,20 +19,20 @@ Node.js 22+.
 ```sh
 git clone https://github.com/stevereynolds2006-ship-it/wallets.git
 cd wallets
-git checkout 3f24a8e053c39ea266c7347880cd00d97c16f380
+git checkout c3c208f5cfb4402dcd1ea2dd18649beb13749b6d
 npm ci
 npm run dev
 ```
 
 Open the printed URL (normally `http://127.0.0.1:8080`).
 
-Burns during play stay simulated. Connect a wallet, pick a Friend, and dive. MetaMask sends 25 RF into that Friend's token-bound wallet before the run starts. The coins stay there. A clear run does not send more. The stand-in never sends RF.
+Burns during play stay simulated. Connect a wallet, pick a Friend, and tap Pay 25 RF. MetaMask sends 25 RF into that Friend's token-bound wallet. The dive does not start until that payment confirms. The coins stay there. The stand-in never sends RF.
 
 **Playable preview:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
 ## Play
 
-- Connect wallet, under the title, reads the Friends you hold. Pick a Friend, then Dive. That NFT is the diver. Dive asks once for 25 RF into that Friend's token-bound wallet before play. The coins stay there. Burns during play do not open the wallet. Disconnect wallet forgets the Friend on this page. The stand-in still uses simulated coins.
+- Connect wallet, under the title, reads the Friends you hold. Pick a Friend, then Pay 25 RF into that Friend's token-bound wallet. Dive stays locked until the payment confirms. Burns during play do not open the wallet. Disconnect wallet forgets the Friend on this page. The stand-in still uses simulated coins.
 - Start with nothing selected dives as the stand-in, strata 01, RAIN, with 22 simulated RF.
 - Steer with A and D, the arrow keys, the on-screen chevrons, or by dragging. A and the left chevron turn left.
 - W or up boosts. S or down brakes.
@@ -60,7 +60,7 @@ FriendSDK v0.1.4 settles each capsule on a preview ledger with a shadow balance 
 
 `node --experimental-strip-types --test src/game/sim.test.ts` — 6 tests, all passing (Ash sink, Drip redeem, empty-wallet refusal, A turns left, seal stays shut until the quota, strata 01 cracks after the quota). `npm run pages` builds the static preview.
 
-- A connected dive sends 25 RF to that Friend's token-bound wallet before play. It stays there. The stand-in never sends RF.
+- A connected dive sends 25 RF to that Friend's token-bound wallet before Dive unlocks. It stays there. The stand-in never sends RF.
 - Connect reads ownership and the canonical Generations bitmap. Burns during play stay simulated.
 - Without a wallet, the diver is original art.
 - The stage fills the visible screen, including the MetaMask browser's fullscreen control.
