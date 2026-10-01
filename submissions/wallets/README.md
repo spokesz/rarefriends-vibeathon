@@ -2,9 +2,9 @@
 
 This Friend is the wallet. Scoop simulated $RAREFRIENDS and burn them as FriendSDK chance capsules to phase through five strata. Ash does not come back.
 
-**Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets-10/
+**Play:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
-**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/be09190101b7f80d681558daf95b036b2594c132
+**Source:** https://github.com/stevereynolds2006-ship-it/wallets/tree/591b74a547400e77920488e2c97bd1fd3bcd844b
 
 **Builder:** Steven Reynolds · [GitHub](https://github.com/stevereynolds2006-ship-it) · [@Sharpbigred](https://x.com/Sharpbigred)
 
@@ -19,7 +19,7 @@ Node.js 22+.
 ```sh
 git clone https://github.com/stevereynolds2006-ship-it/wallets.git
 cd wallets
-git checkout be09190101b7f80d681558daf95b036b2594c132
+git checkout 591b74a547400e77920488e2c97bd1fd3bcd844b
 npm ci
 npm run dev
 ```
@@ -28,7 +28,7 @@ Open the printed URL (normally `http://127.0.0.1:8080`).
 
 Burns and balances are simulated. Connecting a wallet does not sign a transaction or spend RF. It reads the Generations NFTs that wallet holds and draws that Friend.
 
-**Playable preview:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets-10/
+**Playable preview:** https://stevereynolds2006-ship-it.github.io/cinder-crew/wallets/
 
 ## Play
 
