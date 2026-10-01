@@ -138,7 +138,7 @@ See `TOOLKIT.md` for the source of each.
 
 ## Checks and known issues
 
-- **34 checks**, listed with what each does not cover by `node estate/checkall.js --list`.
+- **36 checks** - 35 in `estate/` plus the contracts' parity check, counted off the disk 2026-09-30 - listed with what each does not cover by `node estate/checkall.js --list`.
 - **Red:** `livecheck` fails on the studio harvester. It is a known, older failure.
 - A green check means what it asserts is true. Most browser checks do not yet watch for failed requests
   or console errors (`estate/pagewatch.js` covers three).
