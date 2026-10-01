@@ -83,14 +83,21 @@ Checks: `node estate/checkall.js`. The contracts: `cd estate/contracts && npm i 
 | Raise a level | In build mode, tap the building, then **RAISE**. Nothing rises above the keep's level, except a cell. |
 | Harvesters | In build mode, tap the depot, then **BUILD HARVESTER**. It costs crystals, and the depot has one bay per level. |
 | Man a tower, wall or cell | Select a Friend, then tap the tower, the wall or the cell. Tap again to bring them down. |
-| Knock a building down | In build mode, tap it, then **KNOCK DOWN**. Half of everything ever spent on it comes back. The keep goes last. |
+| Knock a building down | In build mode, tap it, then **KNOCK DOWN**. Half of everything ever spent on it comes back. |
 
+- **Your keep.** You can knock down your own keep. Your other buildings then become ruins that nobody
+  controls. If an opponent destroys your keep, you can still use what you have, but you cannot upgrade it.
+  **This is the rule. The local build still refuses to knock down a keep while other buildings stand.**
 - You start with **240.00 crystals** and no wood. Crystals count to two decimal places.
 - The silo caps how many crystals you can hold. A knock-down whose refund would overflow the silo is
   refused, and the button says how much room it needs.
 
 **A game.**
 
+- **Where you start.** You start at a random spot on your own plot, the ground the map sets aside for
+  you. Or you can choose to start anywhere on the map that nobody has taken yet. Ground goes to whoever
+  takes it first, so you can never start where another player already is. Then you place your keep.
+  **This is the rule. The local build does not do it yet.**
 - A game runs **seven days** to start. The deployer can change that.
 - Joining stays open **24 hours**, then there is an hour before the start. At least two players.
 - The pot is real `$RF`. A cut of **5%** comes off it at launch; the cut is set per game, between 5% and
@@ -138,7 +145,7 @@ See `TOOLKIT.md` for the source of each.
 
 ## Checks and known issues
 
-- **36 checks** - 35 in `estate/` plus the contracts' parity check, counted off the disk 2026-09-30 - listed with what each does not cover by `node estate/checkall.js --list`.
+- **42 checks** - 41 in `estate/` plus the contracts' parity check, counted off the disk 2026-10-01 - listed with what each does not cover by `node estate/checkall.js --list`.
 - **Red:** `livecheck` fails on the studio harvester. It is a known, older failure.
 - A green check means what it asserts is true. Most browser checks do not yet watch for failed requests
   or console errors (`estate/pagewatch.js` covers three).
