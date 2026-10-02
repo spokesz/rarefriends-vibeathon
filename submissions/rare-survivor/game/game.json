@@ -1,0 +1,10 @@
+{
+  "name": "Rare Survivor: Crypto Winter",
+  "consumable": "Survival Pack",
+  "price": "1000000000000000000",
+  "outcomes": [
+    { "name": "Paper Hands Scrap", "chanceBps": 5000, "reward": "500000000000000000" },
+    { "name": "Bull Run Catalyst", "chanceBps": 3500, "reward": "1200000000000000000" },
+    { "name": "Diamond Hands Grail", "chanceBps": 1500, "reward": "3000000000000000000" }
+  ]
+}
